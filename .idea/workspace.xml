@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1932aaa-2a72-4f7f-bde0-d4bc4f639b38" name="Changes" comment="" />
+    <list default="true" id="f1932aaa-2a72-4f7f-bde0-d4bc4f639b38" name="Changes" comment="Changes Jekyll minimal mistakes">
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+>>>>>>> 0e013f996060965bb7eed25ef2c4731b0150c277
+      <change beforePath="$PROJECT_DIR$/assets/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,13 +32,27 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+<<<<<<< HEAD
+    "last_opened_file_path": "/home/yoon/github/moheeto",
+=======
     "last_opened_file_path": "/home/yoon/github/moheeto.github.io",
+>>>>>>> 0e013f996060965bb7eed25ef2c4731b0150c277
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "ruby.rails.projectView.checked": "true",
     "ruby.structure.view.model.defaults.configured": "true",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
   <component name="TaskManager">
@@ -39,11 +62,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674194866476</updated>
-      <workItem from="1674194867658" duration="2727000" />
+      <workItem from="1674194867658" duration="3388000" />
+<<<<<<< HEAD
+      <workItem from="1674791517770" duration="4610000" />
     </task>
+    <task id="LOCAL-00001" summary="Changes Jekyll minimal mistakes">
+      <created>1674798123828</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674798123828</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Changes Jekyll minimal mistakes">
+      <created>1674798362166</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674798362166</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+=======
+      <workItem from="1674791517770" duration="3332000" />
+    </task>
+    <task id="LOCAL-00001" summary="Changes Jekyll minimal mistakes">
+      <created>1674798123828</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674798123828</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+>>>>>>> 0e013f996060965bb7eed25ef2c4731b0150c277
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changes Jekyll minimal mistakes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes Jekyll minimal mistakes" />
   </component>
 </project>
