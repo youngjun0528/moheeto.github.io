@@ -1,0 +1,18 @@
+- Ruby Install
+  - https://github.com/rbenv/rbenv#installation
+  - ```sudo apt install rbenv```
+  - ```rbenv init```
+  - ```rbenv install 3.1.2```
+  - ```rbenv global 3.1.2```
+  - ```gem install bundler```
+- Jekyll
+  - https://docs.github.com/ko/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll
+  - https://jekyllrb-ko.github.io/
+  - ```gem install jekyll```
+- Run
+  - bundle exec jekyll serve
+  - 참고
+    - https://github.com/mmistakes/minimal-mistakes/issues/4054
+    - https://github.com/jekyll/jekyll-sass-converter/issues/145#issuecomment-1363069829
+    - 실행시 Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0. 메세지 발생
+    - 문제는 없으나, jekyll-sass-converter를 이전 버전으로 Fix 해두어야 할 듯
