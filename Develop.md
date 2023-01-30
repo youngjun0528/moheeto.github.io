@@ -16,3 +16,5 @@
     - https://github.com/jekyll/jekyll-sass-converter/issues/145#issuecomment-1363069829
     - 실행시 Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0. 메세지 발생
     - 문제는 없으나, jekyll-sass-converter를 이전 버전으로 Fix 해두어야 할 듯
+- 참고
+  - https://eona1301.github.io/a_to_z/GithubBlog/
