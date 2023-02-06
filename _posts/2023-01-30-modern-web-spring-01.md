@@ -1,20 +1,21 @@
 ---
-title: Spring
+title: "01 - Spring"
 description: 
 published: true
 date: 2021-05-17T02:13:04.735Z
 tags: 
+- modern-web
+- BackEnd
+- Spring
 editor: markdown
 dateCreated: 2021-05-14T00:01:30.145Z
-
+categories: 
+- spring
 author_profile: true
+sidebar_main: true
 toc: true
 toc_sticky: true
-toc_label: "08. Sample Workshop"
-
-categories: 
-- modern-web
-sidebar_main: true
+toc_label: "01 - Spring"
 ---
 
 ## 스프링 제어의 역전(IoC)과 의존성 주입(DI)

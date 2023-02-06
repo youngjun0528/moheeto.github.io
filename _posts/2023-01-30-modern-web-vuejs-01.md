@@ -1,26 +1,28 @@
 ---
-title: "Vuejs"
+title: "01 - Vue.js"
 description: 
 published: true
 date: 2021-05-07T04:27:10.274Z
 tags: 
+- modern-web
+- FrontEnd
+- Vue.js
 editor: markdown
 dateCreated: 2021-04-19T05:36:56.365Z
-
+categories: 
+- vuejs
 author_profile: true
+sidebar_main: true
 toc: true
 toc_sticky: true
-toc_label: "Vue js"
-
-categories: 
-- modern-web
-sidebar_main: true
+toc_label: "01 - Vue.js"
 ---
 
 
 # 기본개념
 ## Vue 인스턴스
 - 루트 인스턴스 생성
+
 {% raw %}
 ```javascript
 new Vue({/*option*/})
@@ -28,6 +30,7 @@ new Vue({/*option*/})
 {% endraw %}
 
 - index.html
+
 {% raw %}
 ```html
 <html>
@@ -109,6 +112,7 @@ new Vue({/*option*/})
 - 32-35 line : [data] data 객체, 초기값 설정
 - 36-40 line : [computed] 계산된 값으로 computed 프로퍼티에 종속된 대상을 추적하고 변경될때 프로퍼티의 값을 갱신한다.
 - 42-51 line : 객체에서 사용하는 모든 메소드를 담는다. 메소드 내에서 this로 data 객체의 프로퍼티에 접근, 화살표 함수 구문은 사용하여서는 안된다.(this로 data 객체 참조가 불가능)
+
 
 ## 컴포넌트
 - vue 애플리케이션에서 코드를 재사용할 수 있는 기본적인 방법

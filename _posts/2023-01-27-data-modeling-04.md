@@ -1,64 +1,70 @@
 ---
-title: '04 - 데이터모델링'
+title: "04 - 1:M 관계 와 M:N 관계"
 description: 
 published: true
-date: 2021-05-17T04:52:10.216Z
+date: 2021-08-02T23:28:17.457Z
 tags: 
+- database
+- modeling
 editor: markdown
-dateCreated: 2021-04-13T01:58:20.134Z
+dateCreated: 2021-07-23T06:10:19.823Z
 categories:
-- data-modeling
+- modeling
 author_profile: true
 sidebar_main: true
 toc: true
 toc_sticky: true
-toc_label: "04. 데이터모델링"
+toc_label: "04 - 1:M 관계 와 M:N 관계"
 ---
 
-## 데이터 모델링 단계
-- 개념적 모델링
-애플리케이션의 요구사항을 검토해 데이터 요구 사항을 발견하는 단걔
-ER(Entity Relationship) 다이어그램으로 데이터 요구사항을 문서화한다.
-- 논리적 모델링
-데이터 요구사항을 추가로 분석하고, 범위를 정한다.
-	* 데이터 정규화
-  데이터의 삽입, 수정, 삭제를 수행하는 동안 데이터의 중복과 예외를 제거
-  데이터의 의존성을 확인
-  * 데이터 비정규화
-  데이터의 성능 계선을 위한 작업
-- 물리적 모델링
-실제 RDBMS 나 NoSQL 와 같은 데이터베이스 설계
-인덱싱과 같은 성능 향상 작업 수행
+## 식별관계와 비식별관계
+1. 식별관걔는 실선, 기본키에 외래키가 포함되어 있다면 식별관계
+![data-modeling-04-01.jpg](/assets/img/data_modeling/data-modeling-04-01.jpg)
 
-## 데이터 모델링 용어
-- 엔티티(Entities)
-물리적또는 논리적으로 존재하며 고유하게 식별
-도메인의 복잡성을 추상화
-- 속성(Attributes)
-엔티티의 속성을 표현
-- 관계(Relationships)
-두 엔티티 간의 관계를 표현
-- 기본키(Primary Key)
-엔티티를 고유하게 식별하는데 활용할 수 있는 단일 속성 또는 여러 속성의 조합
-	- 후보키(Candidate Keys)
-  기본키는 아니지만 엔티티를 식별하는데 사용되는 키
-	- 대체키(Surrogate Keys)
-  시스템에서 생성된 고유의 값
-  DBMS에서 자동으로 생성되는 ID 값 또는 UUID를 생성하여 사용한다.
-- 외래키(Foreign Keys)
-다른 엔티티 타입 간의 관계를 형성하는 방법
+2. 비식별 관계는 점선, 기본키에 외래키가 포함되어 있지 않다면 비식별 관계
+![data-modeling-04-02.jpg](/assets/img/data_modeling/data-modeling-04-02.jpg)
 
-## 데이터 모델링 목적
-- 완전성(Completeness)
-현재 이용할 수 있는 요구사항에 명시된 기능의 구현을 지원
-- 중복 최소화(Minimal Redundancy)
-중복 데이터를 없애는데 필요한 추가적인 노력과 데이터의 잠재적인 불일치를 막기 위해 설계
-- 확장성(Extensibility)
-기존 데이터 구조에 최소한의 영향으로 새로운 요구사항을 수용할 수 있도록 확장
-- 일관성(Consistency)
-데이터 모델의 엔티티와 속성의 명명 규약의 알관성
+## 1:M 관계
+한쪽이 관계를 맺은 쪽의 여러 객체를 가진 것을 의미
+컴퓨터 디럭터리 구조(하나의 폴더 내에 여러 개의 파일)
 
-## ER Diagram
+## 재귀적 1:M 관계 (자기참조관계)
+| 부서ID | 부서명 | 상위부서ID |
+|---|---|---|
+| 1 | 총무부 | NNULL |
+| 2 | 총무1과 | 1 |
+| 3 | 총무2과 | 1 |
+| 4 | 회계팀 | 2 |
+| 5 | 인사팀 | 2 |
 
 
+SELECT A.부서ID, A.부서명, B.부서명 FROM 부서 AS A JOIN 부서 AS B ON A.부서ID = B.상위부서ID
 
+| 상위부서ID | 상위부서명 | 하위부서명 |
+|---|---|---|
+| 1 | 총무부 | 총무1과 |
+| 1 | 총무부 | 총무2과 |
+| 2 | 총무1과 | 회계팀 |
+| 2 | 총무1과 | 인사팀 |
+
+![data-modeling-04-03.jpg](/assets/img/data_modeling/data-modeling-04-03.jpg)
+
+
+## M:N 관계
+
+### 관계테이블의 독립형 PK
+학생이 동일한 과목을 2번 등록할 수 있는 문제 발생함.
+![data-modeling-04-04.jpg](/assets/img/data_modeling/data-modeling-04-04.jpg)
+
+
+### 관계테이블의 독립형 PK와 대체키 사용
+대체키(Alternative Key)를 사용하여 프로그래밍 적으로 사용하기 편하게 처리
+![data-modeling-04-05.jpg](/assets/img/data_modeling/data-modeling-04-05.jpg)
+
+### 관계테이블의 상속형 PK
+![data-modeling-04-06.jpg](/assets/img/data_modeling/data-modeling-04-06.jpg)
+
+***
+> __참고자료__
+>
+> [RDMS Modeling 기초](https://www.inflearn.com/course/%EA%B4%80%EA%B3%84%ED%98%95%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-rdbms/dashboard)

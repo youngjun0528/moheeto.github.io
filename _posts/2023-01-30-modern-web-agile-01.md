@@ -1,20 +1,20 @@
 ---
-title: '01 - 요구사항분석'
+title: "01 - 요구사항분석"
 description: 
 published: true
 date: 2021-05-07T07:45:14.430Z
 tags: 
+- Modern Web
+- Agile
 editor: markdown
 dateCreated: 2021-05-07T07:01:09.742Z
-
+categories:
+- agile
 author_profile: true
+sidebar_main: true
 toc: true
 toc_sticky: true
-toc_label: "08. Sample Workshop"
-
-categories:
-- modern-web
-sidebar_main: true
+toc_label: "01 - 요구사항분석"
 ---
 
 # 애자일 방식으로 요구사항 관리하기

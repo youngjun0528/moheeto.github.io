@@ -1,20 +1,20 @@
 ---
-title: '02 - 코드설계'
+title: "02 - 코드설계"
 description: 
 published: true
 date: 2021-05-24T03:17:42.888Z
 tags: 
+- Modern Web
+- Agile
 editor: markdown
 dateCreated: 2021-05-17T05:04:17.830Z
-
+categories: 
+- agile
 author_profile: true
+sidebar_main: true
 toc: true
 toc_sticky: true
-toc_label: "08. Sample Workshop"
-
-categories: 
-- modern-web
-sidebar_main: true
+toc_label: "02 - 코드설계"
 ---
 
 # 애자일 코드 설계
