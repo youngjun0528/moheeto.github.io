@@ -10,13 +10,6 @@ toc_label: "Portfolio"
 ---
 
 
-### Common
-
-Linux 기반의 On-Premise 서비스부터 Cloud 서비스까지 운영하면서 웹서비스를 구축 운영해왔습니다.
-시스템 운영시 가장 중요한 것인 효율성을 제고하기 위한 운영 효율화 입니다. Jenkins 를 기반으로 CI/CD 를 자동화한다던가, 데이터 추출및 전달을 위한 Batch Shell Script 개발 등을 계속 해왔고, 최근 AWS Cloud 기반으로 서비스 운영을 하고 있습니다.
-점차 클라우드 기반의 서비스들은 지속적으로 발전해 나가고 있으며, Docker 뿐만 아니라 Kubernetis 등 다양한 컨테이너 기반의 시스템을 바라보고 있습니다. 그에 맞추어 웹 서비스들도 Spring + JSP/Servelt Full-Stack 서비스들이 아닌 Vue 나 React와 같은 Front-End 서비스와 Node Js와 같은 Back-End 서비스로 다양한 프레임워크들이 발전해 나가고 있음을 알고 있습니다.
-시스템은 어느 하나의 고객을 위한 서비스가 아닌 다양한 고객을 위한 확장성과 유연성을 갖춘 컨테이너 방식으로 진행해 가고 있고, 현재도 이미 이러한 기술을 기반으로 서비스를 운영하고 있습니다.
-
 ### Test
 
 #### Test Service Center 업무
