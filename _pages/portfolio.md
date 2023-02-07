@@ -59,7 +59,7 @@ Android 모바일 UI 자동화 테스트를 위한 Program
         1.  Device 화면의 좌표 기반으로 Test가 수행
         2.  최종 결과 이미지와 기대 이미지와 동일한지 판단 PASS/FAIL 결과 저장
 
-![Test.png](/assets/img/personal/Test.png)
+![Test.png](..%2Fassets%2Fimg%2Fpersonal%2FTest.png)
 
 #### Smart Device Managemant System 개선 및 운영
 
