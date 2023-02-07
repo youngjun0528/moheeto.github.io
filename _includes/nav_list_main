@@ -10,6 +10,7 @@
             <a href="/portfolio" class=""><span class="nav__sub-title">Portfolio</span></a>
             <ul>
                 <li><a href="/ebook" class=""><span class="">E-Book</span></a></li>
+                <li><a href="/reading" class=""><span class="">Reading</span></a></li>
             </ul>
         </li>
         <!--전체 글 수-->
