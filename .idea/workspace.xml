@@ -4,54 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1932aaa-2a72-4f7f-bde0-d4bc4f639b38" name="Changes" comment="Update Page layout">
-      <change beforePath="$PROJECT_DIR$/_pages/portfolio.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/portfolio.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_pages/reading.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/reading.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-27-data-modeling-01.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/data-modeling/2023-01-27-data-modeling-01.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-27-data-modeling-02.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/data-modeling/2023-01-27-data-modeling-02.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-27-data-modeling-03.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/data-modeling/2023-01-27-data-modeling-03.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-27-data-modeling-04.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/data-modeling/2023-01-27-data-modeling-04.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-27-data-modeling-05.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/data-modeling/2023-01-27-data-modeling-05.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-27-data-modeling-06.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/data-modeling/2023-01-27-data-modeling-06.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-27-data-modeling-07.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/data-modeling/2023-01-27-data-modeling-07.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-27-data-modeling-08.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/data-modeling/2023-01-27-data-modeling-08.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-27-data-modeling-09.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/data-modeling/2023-01-27-data-modeling-09.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-27-data-modeling-10.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/data-modeling/2023-01-27-data-modeling-10.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-27-data-modeling-11.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/data-modeling/2023-01-27-data-modeling-11.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-27-data-modeling-12.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/data-modeling/2023-01-27-data-modeling-12.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-27-data-modeling-13.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/data-modeling/2023-01-27-data-modeling-13.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-30-modern-web-agile-01.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/modern-web/2023-01-30-modern-web-agile-01.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-30-modern-web-agile-02.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/modern-web/2023-01-30-modern-web-agile-02.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-30-modern-web-agile-03.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/modern-web/2023-01-30-modern-web-agile-03.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-30-modern-web-javascript-01.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/modern-web/2023-01-30-modern-web-javascript-01.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-30-modern-web-spring-01.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/modern-web/2023-01-30-modern-web-spring-01.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-30-modern-web-spring-02.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/modern-web/2023-01-30-modern-web-spring-02.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-30-modern-web-spring-03.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/modern-web/2023-01-30-modern-web-spring-03.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-30-modern-web-vuejs-01.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/modern-web/2023-01-30-modern-web-vuejs-01.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-30-modern-web-vuejs-02.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/modern-web/2023-01-30-modern-web-vuejs-02.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-30-modern-web-vuejs-03.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/modern-web/2023-01-30-modern-web-vuejs-03.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-30-modern-web-vuejs-04.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/modern-web/2023-01-30-modern-web-vuejs-04.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-30-modern-web-vuejs-05.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/modern-web/2023-01-30-modern-web-vuejs-05.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-30-modern-web-vuejs-06.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/modern-web/2023-01-30-modern-web-vuejs-06.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-30-modern-web-vuejs-07.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/modern-web/2023-01-30-modern-web-vuejs-07.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-30-modern-web-vuejs-08.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/modern-web/2023-01-30-modern-web-vuejs-08.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-30-modern-web-vuejs-09.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/modern-web/2023-01-30-modern-web-vuejs-09.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-30-modern-web-vuejs-10.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/modern-web/2023-01-30-modern-web-vuejs-10.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-30-modern-web-vuejs-11.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/modern-web/2023-01-30-modern-web-vuejs-11.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-30-modern-web-vuejs-12.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/modern-web/2023-01-30-modern-web-vuejs-12.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-30-modern-web-vuejs-13.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/modern-web/2023-01-30-modern-web-vuejs-13.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-02-03-certificate-asdp-01.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/certificate/2023-02-03-certificate-asdp-01.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-02-03-certificate-linux-master-01.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/certificate/2023-02-03-certificate-linux-master-01.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-02-03-cloud-jenkins-01.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/cloud/2023-02-03-cloud-jenkins-01.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-02-03-os-docker-01.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/os/2023-02-03-os-docker-01.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-02-03-programming-data-structure-01.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/programming/2023-02-03-programming-data-structure-01.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-02-03-programming-java-01.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/programming/2023-02-03-programming-java-01.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-02-03-sw-engineering-tdd-01.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/sw-engineering/2023-02-03-sw-engineering-tdd-01.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-02-03-sw-engineering-tdd-02.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/sw-engineering/2023-02-03-sw-engineering-tdd-02.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-02-03-sw-engineering-tdd-03.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/sw-engineering/2023-02-03-sw-engineering-tdd-03.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/data_modeling/adobe_scan_2021._5._24._(2)_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/data_modeling/data-modeling-13-02.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/data_modeling/adobe_scan_2021._5._24._(3)_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/personal/cloud-jenkins-build.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/cloud/cloud-jenkins-build.jpg" afterDir="false" />
+    <list default="true" id="f1932aaa-2a72-4f7f-bde0-d4bc4f639b38" name="Changes" comment="Modify .gitignore">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,16 +105,43 @@
       <option name="project" value="LOCAL" />
       <updated>1675839312398</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update blog post">
+      <created>1675839389518</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675839389518</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Modify .gitignore">
+      <created>1675839556813</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675839556813</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changes Jekyll minimal mistakes" />
     <MESSAGE value="Add blog pages init" />
     <MESSAGE value="Update Page layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Page layout" />
+    <MESSAGE value="Update blog post" />
+    <MESSAGE value="Modify .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modify .gitignore" />
   </component>
 </project>
