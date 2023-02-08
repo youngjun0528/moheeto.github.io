@@ -20,7 +20,7 @@ toc_label: "01 - AWS ECS Jenkins Build"
 ---
 
 # AWS ECS Jenkins Pipeline Build
-![cloud-jenkins-build.jpg](/assets/img/personal/cloud-jenkins-build.jpg)
+![cloud-jenkins-build.jpg](..%2F..%2Fassets%2Fimg%2Fcloud%2Fcloud-jenkins-build.jpg)
 
 ```javascript
 pipeline {

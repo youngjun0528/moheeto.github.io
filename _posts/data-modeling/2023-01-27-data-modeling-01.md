@@ -40,7 +40,7 @@ toc_label: "01 - 관계형 데이터베이스 소개"
     외래키는 다른 테이블에 정의된 고유 식별자를 참조
     외래 키의 값은 다른 테이블에 정의된 고유 식별자의 값의 범위를 넘을 수 없도록 제한됨.
 
-![data-modeling-01-01.jpg](/assets/img/data_modeling/data-modeling-01-01.jpg)
+![data-modeling-01-01.jpg](..%2F..%2Fassets%2Fimg%2Fdata_modeling%2Fdata-modeling-01-01.jpg)
 
 ### 주식별자
 
@@ -55,7 +55,7 @@ Primary Key는 등록시 명시 필요
 2. 각 학생들은 수학, 영어, 국어, 과학, 국사 최소한 3과목을 수강
 3. 학생 3명의 예제를 만들고 이들이 수강신청한 과목들을 관리
 
-![data-modeling-01-02.jpg](/assets/img/data_modeling/data-modeling-01-02.jpg)
+![data-modeling-01-02.jpg](..%2F..%2Fassets%2Fimg%2Fdata_modeling%2Fdata-modeling-01-02.jpg)
 
 고려사항
 

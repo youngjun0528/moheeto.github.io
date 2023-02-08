@@ -77,7 +77,7 @@ Android 모바일 UI 자동화 테스트를 위한 Program
             -   Java Script GUI Framework
             -   Template 방식으로 DOM 객체를 생성한 후 이후 각 화면 별로 랜더링 후 SPA와 유사하게 작동
         
-        ![Apache-Tomcat-WEBWAS.png](/assets/img/personal/Apache-Tomcat-WEBWAS.png)
+        ![Apache-Tomcat-WEBWAS.png](..%2Fassets%2Fimg%2Fpersonal%2FApache-Tomcat-WEBWAS.png)
         
 2.  요구사항 분석 및 기능 개발
     
@@ -96,7 +96,7 @@ Android 모바일 UI 자동화 테스트를 위한 Program
             
             1.  Apache POI Lib. 사용
             
-            ![Excel-Parsing.png](/assets/img/personal/Excel-Parsing.png)
+            ![Excel-Parsing.png](..%2Fassets%2Fimg%2Fpersonal%2FExcel-Parsing.png)
             
 3.  형상 관리
     
@@ -127,7 +127,7 @@ Android 모바일 UI 자동화 테스트를 위한 Program
     2.  Server REST API System
         1.  Linux Server + + Apache/Tomcat + Spring Framework + MySQL
 
-![Azure-Cloud.png](/assets/img/personal/Azure-Cloud.png)
+![Azure-Cloud.png](..%2Fassets%2Fimg%2Fpersonal%2FAzure-Cloud.png)
 
 1.  요구사항 분석 및 기능 개발
     1.  Log File이 업로드 되는 Cloud Sync Server App 개발
@@ -168,7 +168,7 @@ Android 모바일 UI 자동화 테스트를 위한 Program
     3.  Jira
         1.  Release 정보
 
-![Jenkins.png](/assets/img/personal/Jenkins.png)
+![Jenkins.png](..%2Fassets%2Fimg%2Fpersonal%2FJenkins.png)
 
 #### IoT 기기 간 연동, 이벤트 로그 수집, 분석 System 개선
 
@@ -186,7 +186,7 @@ REST API 규약을 정해 각 컨테이너 서비스마다 데이터 수신, 저
 서비스별 Request/Response를 의미있는 데이터로 추출하여 정제된 데이터를 추출함.
 MSA 방식으로 단말 종류별로 나누어져 있던 서비스를 Docker Container로 구성하여 유지보수 효율성을 높임.
 
-![AWS.png](/assets/img/personal/AWS.png)
+![AWS.png](..%2Fassets%2Fimg%2Fpersonal%2FAWS.png)
 
 1.  환경구성
     1.  AWS

@@ -22,7 +22,7 @@ toc_label: "09 - 역졍규화와 인덱스"
 	- 정규화되지 않은 상태에서 중복을 허용하는 것과는 다름
 	- 대부분 JOIN 시 발생되는 엄청난 계산량을 해결하기 위해서 사용
 	- select  (select count(*) a from table), (select count(*) b from table),
-![data-modeling-09-01.jpg](/assets/img/data_modeling/data-modeling-09-01.jpg)
+![data-modeling-09-01.jpg](..%2F..%2Fassets%2Fimg%2Fdata_modeling%2Fdata-modeling-09-01.jpg)
   
 # 인덱스
 ## B-Tree 인덱스 구조

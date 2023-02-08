@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1932aaa-2a72-4f7f-bde0-d4bc4f639b38" name="Changes" comment="Add blog pages init">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/ui-text.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/ui-text.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/archive-single3.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/archive-single3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/post_pagination.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/post_pagination.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/single.html" afterDir="false" />
+    <list default="true" id="f1932aaa-2a72-4f7f-bde0-d4bc4f639b38" name="Changes" comment="Update Page layout">
       <change beforePath="$PROJECT_DIR$/_pages/portfolio.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/portfolio.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_pages/reading.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/reading.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_posts/2023-01-27-data-modeling-01.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/data-modeling/2023-01-27-data-modeling-01.md" afterDir="false" />
@@ -54,7 +49,6 @@
       <change beforePath="$PROJECT_DIR$/_posts/2023-02-03-sw-engineering-tdd-01.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/sw-engineering/2023-02-03-sw-engineering-tdd-01.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_posts/2023-02-03-sw-engineering-tdd-02.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/sw-engineering/2023-02-03-sw-engineering-tdd-02.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_posts/2023-02-03-sw-engineering-tdd-03.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/sw-engineering/2023-02-03-sw-engineering-tdd-03.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/_navigation.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/img/data_modeling/adobe_scan_2021._5._24._(2)_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/data_modeling/data-modeling-13-02.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/img/data_modeling/adobe_scan_2021._5._24._(3)_1.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/img/personal/cloud-jenkins-build.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/cloud/cloud-jenkins-build.jpg" afterDir="false" />
@@ -80,23 +74,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/yoon/github/moheeto.github.io/assets/drawio",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ruby.rails.projectView.checked": "true",
-    "ruby.structure.view.model.defaults.configured": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/yoon/github/moheeto.github.io/assets/drawio&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/drawio" />
@@ -149,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675648446853</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update Page layout">
+      <created>1675839312397</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675839312398</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +159,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changes Jekyll minimal mistakes" />
     <MESSAGE value="Add blog pages init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add blog pages init" />
+    <MESSAGE value="Update Page layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Page layout" />
   </component>
 </project>

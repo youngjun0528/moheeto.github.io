@@ -24,7 +24,7 @@ toc_label: "07 - 데이터 이상 현상"
 - Update, Delete, Insert 에서 발생할 수 있음.
 
 ### Example
-![data-modeling-07-01.jpg](/assets/img/data_modeling/data-modeling-07-01.jpg)
+![data-modeling-07-01.jpg](..%2F..%2Fassets%2Fimg%2Fdata_modeling%2Fdata-modeling-07-01.jpg)
 
 #### Update Anomaly
 홍길동을 2루수로 바꿀 때 일부 홍길동이 바뀌지 않는 현상이 있을 수 있다.
@@ -43,29 +43,29 @@ toc_label: "07 - 데이터 이상 현상"
 
 ## 정규화
 ### 1. 데이터 정리
-![data-modeling-07-02.jpg](/assets/img/data_modeling/data-modeling-07-02.jpg)
+![data-modeling-07-02.jpg](..%2F..%2Fassets%2Fimg%2Fdata_modeling%2Fdata-modeling-07-02.jpg)
 
 ### 2. 제1 정규화
 데이터 중복을 제거하기 위한 테이블 분할
 고유 식별자가 결정됨. 이를 Primary Key(PK) 라 부름.
 아래 예제에서는 주문번호로 관계가 생김. (1:M)
-![data-modeling-07-03.jpg](/assets/img/data_modeling/data-modeling-07-03.jpg)
+![data-modeling-07-03.jpg](..%2F..%2Fassets%2Fimg%2Fdata_modeling%2Fdata-modeling-07-03.jpg)
 
 ### 3. 제2 정규화
 2개 이상으로 구성된 PK에서 발생함.
 식별자 일부에 종속된 속성(Attribute)는 제거해야 한다.
 아래 예제에서는 상품 코드로 관계가 형성됨.
-![data-modeling-07-04.jpg](/assets/img/data_modeling/data-modeling-07-04.jpg)
+![data-modeling-07-04.jpg](..%2F..%2Fassets%2Fimg%2Fdata_modeling%2Fdata-modeling-07-04.jpg)
 
 ### 4. 제3 정규화
 식별자 이외의 속성간에 종속관계가 존재하면 안된다.
 종속관계가 있으면 중복값이 생성된다.
 이행 종속관계 분해
 아래 예제에서는 고객 번호로 관계가 생김.
-![data-modeling-07-05.jpg](/assets/img/data_modeling/data-modeling-07-05.jpg)
+![data-modeling-07-05.jpg](..%2F..%2Fassets%2Fimg%2Fdata_modeling%2Fdata-modeling-07-05.jpg)
 
 ### 5. 정리
-![data-modeling-07-06.jpg](/assets/img/data_modeling/data-modeling-07-06.jpg)
+![data-modeling-07-06.jpg](..%2F..%2Fassets%2Fimg%2Fdata_modeling%2Fdata-modeling-07-06.jpg)
 
 ***
 > __참고자료__

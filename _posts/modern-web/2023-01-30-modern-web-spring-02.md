@@ -44,7 +44,7 @@ CAS 서버에 인증을 요청하고 성공시 어플리케이션으로 리다�
 - 권한 부여 서버 : 클라이언트가 요청한 데이터로 접근할 수 있도록 권한 부여를 수행하는 서버
 - 클라리언트 : 데이터에 접근하기를 원하는 어플리케이션
 
-![screenshot_20210723-132857~2.png](/assets/img/spring/screenshot_20210723-132857~2.png)
+![screenshot_20210723-132857~2.png](..%2F..%2Fassets%2Fimg%2Fspring%2Fscreenshot_20210723-132857~2.png)
 
 ## 권한 부여 방식
 - 역할 기반(Role-bsed) : 리소스 종류 단위로 접근을 컨트롤
@@ -65,7 +65,7 @@ Open Web Application Security Project(OWASP) 에서 정의한 10가지 항목
 
 # Spring Security
 
-![screenshot_20210723-132914~2.png](/assets/img/spring/screenshot_20210723-132914~2.png)
+![screenshot_20210723-132914~2.png](..%2F..%2Fassets%2Fimg%2Fspring%2Fscreenshot_20210723-132914~2.png)
 
 1. HTTP 요청이 서버에 도달하면 그것은 스프링 시큐리티 필터 체인(Spring Security Filter Chain)을 지나간다. 
 2. 스프링 시큐리티 필터 체인은 org.springframework.web.filter.DelegatingFilterProxy으로부터 요청을 전달받는다. 
@@ -99,7 +99,7 @@ Authentication의 getAuthorities() 메소드로 사용자 에게 부여된 권�
 
 
 ## Spring Security Filter
-![screenshot_20210723-132939~2.png](/assets/img/spring/screenshot_20210723-132939~2.png)
+![screenshot_20210723-132939~2.png](..%2F..%2Fassets%2Fimg%2Fspring%2Fscreenshot_20210723-132939~2.png)
 
 #### WebAsyncManagerlntegrationFilter
 이 필터는 SecurityContext와 비동기 요청 처리를 위한 핵심 클래스인 스프링 웹의 WebAsyncManager 간의 통합을 제공한다.
@@ -114,7 +114,7 @@ SecurityContext가 로드되고 나면 SecurityContextHolder.getContext()로 Sec
 
 이 필터는 또한 다른 사용자로부터 온 요청으로의 시큐리티 컨텍스트의 유출을 방지하기 위해 SecurityContextHolder를 지운다.
 
-![screenshot_20210817-164311~2.png](/assets/img/spring/screenshot_20210817-164311~2.png)
+![screenshot_20210817-164311~2.png](..%2F..%2Fassets%2Fimg%2Fspring%2Fscreenshot_20210817-164311~2.png)
 
 SecurityContextPersistenceFilter 필터는 SecurityContextRepository 인터페이스를 구현한 HttpSessionSecurityContextRepository의 인스턴스에 대한 참조를 가진다. 
 
@@ -127,7 +127,7 @@ SecurityContext 구현체인 SecurityContextlmpl은 Authentication의 인스턴�
 이럴 때 SecurityContextPersistenceFilter 필터가 SecurityCcintextHolder에 넣어주는 SecurityContext는 비어 있을 것이다. 
 다음 그림에서 보다시피 SecurityContext 객체에 있는 authentication 또한 널 값이다.
 
-![screenshot_20210817-164344~2.png](/assets/img/spring/screenshot_20210817-164344~2.png)
+![screenshot_20210817-164344~2.png](..%2F..%2Fassets%2Fimg%2Fspring%2Fscreenshot_20210817-164344~2.png)
 
 SecurityContext에 있는 authentication이 로그인한 사용자 정보를 포함하는 Authentication 객체로 업데이트되는 것은 인증이 성공적으로 끝난 다음이다. 
 
@@ -181,7 +181,7 @@ UsernamePasswordAuthenticationFilter는 어떤 요청에도 인증 프로세스�
 
 UsernamePasswordAuthenticationFilter는 HTTP POST 메소드로 /login 경로로 전송된 요청을 위해서만 인증 프로세스를 시작한다.
 
-![screenshot_20210817-164331~2.png](/assets/img/spring/screenshot_20210817-164331~2.png)
+![screenshot_20210817-164331~2.png](..%2F..%2Fassets%2Fimg%2Fspring%2Fscreenshot_20210817-164331~2.png)
 
 UsernamePasswejrdAuthenticationFilter는 AuthenticationManager의 인스턴스에 대한 참조를 갖는 AbstractAuthenticationProcessingFilter를 상속한다. 
 
@@ -192,7 +192,7 @@ AuthenticationManager는 오직 authenticate()라는 하나의 메소드를 갖�
 그리고 인증된 Authentication 인스턴스를 반환한다.
 
 
-![screenshot_20210817-164403~2.png](/assets/img/spring/screenshot_20210817-164403~2.png)
+![screenshot_20210817-164403~2.png](..%2F..%2Fassets%2Fimg%2Fspring%2Fscreenshot_20210817-164403~2.png)
 
 
 AuthenticationManager의 구현체인 ProviderManager는 인증을 수행하는 데 사용할 수 있는 AuthenticationProvider의 리스트를 가진다. 
@@ -228,7 +228,7 @@ DaoAuthenticationProvider는 PasswordEncoder의 인스턴스와 UserDetailsServi
 
 SecurityContextPersistenceFilter에서 인증된 Authentication 객체는 HttpSession에 저장된다.
 
-![screenshot_20210817-164411~2.png](/assets/img/spring/screenshot_20210817-164411~2.png)
+![screenshot_20210817-164411~2.png](..%2F..%2Fassets%2Fimg%2Fspring%2Fscreenshot_20210817-164411~2.png)
 
 인증 전 Authentication 인스턴스의 principal, credentials 프로퍼티의 값은 로그인 요청을 통해 전송된 이메일 주소 또는 사용자 명과 비밀번호다. 
 
@@ -301,7 +301,7 @@ FilterSecuritylnterceptor는 AccessDecisionManager에 대한 참조를 가진다
 
 이것은 스프링 시큐리티가 요청의 경로를 HttpSecurity의 설정과 비교하여 확인하고 SecurityContext에 있는 부여된 권한이 접근을 허용하기에 충분한지 확인한다는 의미다.
 
-![screenshot_20210817-164424~2.png](/assets/img/spring/screenshot_20210817-164424~2.png)
+![screenshot_20210817-164424~2.png](..%2F..%2Fassets%2Fimg%2Fspring%2Fscreenshot_20210817-164424~2.png)
 
 FilterSecuritylnterceptor는 AccessDecisionManager의 인스턴스에 대한 참조를 갖는 AbstractSecurityInterceptor를 상속한다. 
 

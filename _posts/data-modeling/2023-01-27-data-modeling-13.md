@@ -18,7 +18,7 @@ toc_label: "13 - Sample"
 ---
 
 ## Sample 1
-![data-modeling-07-01.jpg](/assets/img/data_modeling/adobe_scan_2021._5._24._(2)_1.jpg)
+![data-modeling-13-01.jpg](..%2F..%2Fassets%2Fimg%2Fdata_modeling%2Fdata-modeling-13-01.jpg)
 
 ## Sample 2
-![data-modeling-07-01.jpg](/assets/img/data_modeling/adobe_scan_2021._5._24._(3)_1.jpg)
+![data-modeling-13-02.jpg](..%2F..%2Fassets%2Fimg%2Fdata_modeling%2Fdata-modeling-13-02.jpg)

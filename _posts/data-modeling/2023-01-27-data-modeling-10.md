@@ -62,4 +62,4 @@ toc_label: "10 - Sample Project"
 ***
 > __참고자료__
 >
-> [참고파일 project.pdf](/assets/attach/project.pdf)
+> [project.pdf](..%2F..%2Fassets%2Fattach%2Fproject.pdf)

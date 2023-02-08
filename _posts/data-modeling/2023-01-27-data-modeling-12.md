@@ -129,4 +129,4 @@ toc_label: "12 - DAP"
 | 투자코드 |
 
 3\. ERD
-![data-modeling-12-01.jpg](/assets/img/data_modeling/data-modeling-12-01.jpg)
+![data-modeling-12-01.jpg](..%2F..%2Fassets%2Fimg%2Fdata_modeling%2Fdata-modeling-12-01.jpg)

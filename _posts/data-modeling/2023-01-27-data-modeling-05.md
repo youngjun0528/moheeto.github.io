@@ -35,10 +35,10 @@ toc_label: "05 - 도서관 대출 예제"
 		- 로그인, 조회, 대출, 대출예약
 
 ## ER Diagram 1
-![data-modeling-05-01.jpg](/assets/img/data_modeling/data-modeling-05-01.jpg)
+![data-modeling-05-01.jpg](..%2F..%2Fassets%2Fimg%2Fdata_modeling%2Fdata-modeling-05-01.jpg)
 
 ## ER Diagram 2
-![data-modeling-05-02.jpg](/assets/img/data_modeling/data-modeling-05-02.jpg)
+![data-modeling-05-02.jpg](..%2F..%2Fassets%2Fimg%2Fdata_modeling%2Fdata-modeling-05-02.jpg)
 
 ***
 > __참고자료__

@@ -24,7 +24,7 @@ toc_label: "02 - Vuex 상태관리"
 사용자가 다른 페이지로 이동할 때에는 Client에서는 상태가 사라진다.
 애플리케이션의 상태는 Server에서 동적으로 생성되기 때문에 대부분의 상태는 Server 쪽에서 유지한다.
 
-![screenshot_20210903-174744~2.png](/assets/img/vuejs/screenshot_20210903-174744~2.png)
+![screenshot_20210903-174744~2.png](..%2F..%2Fassets%2Fimg%2Fvuejs%2Fscreenshot_20210903-174744~2.png)
 
 2. SPA(Single Page Application)
 페이지의 새로고침이 존재하지 않음.
@@ -35,11 +35,11 @@ toc_label: "02 - Vuex 상태관리"
 3. Flux
 데이터의 흐름을 단방향으로 강제
 
-![screenshot_20210903-174759~2.png](/assets/img/vuejs/screenshot_20210903-174759~2.png)
+![screenshot_20210903-174759~2.png](..%2F..%2Fassets%2Fimg%2Fvuejs%2Fscreenshot_20210903-174759~2.png)
 
 ## Vuex
 컴포넌트 간 공유되는 상태를 위해 중앙 징중화된 Store로 활용
 예측 가능한 방식으로만 변경한다.
 
-![screenshot_20210903-174811~2.png](/assets/img/vuejs/screenshot_20210903-174811~2.png)
+![screenshot_20210903-174811~2.png](..%2F..%2Fassets%2Fimg%2Fvuejs%2Fscreenshot_20210903-174811~2.png)
 

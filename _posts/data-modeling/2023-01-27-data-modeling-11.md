@@ -57,7 +57,7 @@ toc_label: "11 - Sample Workshop"
 
 #### 업무적으로 의미가 있는 명사부터 엔터티 타입 선정
 
-![data-modeling-11-01.jpg](/assets/img/data_modeling/data-modeling-11-01.jpg)
+![data-modeling-11-01.jpg](..%2F..%2Fassets%2Fimg%2Fdata_modeling%2Fdata-modeling-11-01.jpg)
 
 #### 관계 정의서 작성
 
@@ -87,11 +87,11 @@ toc_label: "11 - Sample Workshop"
   
 #### ERD 관계 추가
 
-![data-modeling-11-02.jpg](/assets/img/data_modeling/data-modeling-11-02.jpg)
+![data-modeling-11-02.jpg](..%2F..%2Fassets%2Fimg%2Fdata_modeling%2Fdata-modeling-11-02.jpg)
 
 #### M:N 관계 해소
 
-![data-modeling-11-03.jpg](/assets/img/data_modeling/data-modeling-11-03.jpg)
+![data-modeling-11-03.jpg](..%2F..%2Fassets%2Fimg%2Fdata_modeling%2Fdata-modeling-11-03.jpg)
 
 ### 도메인 표준화
 
@@ -160,4 +160,4 @@ toc_label: "11 - Sample Workshop"
 ***
 > **참고자료**
 >
-> [참고파일 workshop.pdf](/assets/attach/workshop.pdf)
+> [workshop.pdf](..%2F..%2Fassets%2Fattach%2Fworkshop.pdf)

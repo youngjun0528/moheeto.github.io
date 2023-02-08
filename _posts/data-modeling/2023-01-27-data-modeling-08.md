@@ -30,16 +30,16 @@ toc_label: "08 - 정규화"
 FD: 고객번호->고객명
 FD1: 고객번호-> 주민번호
 FD2: 고객번호-> 전화번호 ????? <여러개 존재>
-![data-modeling-08-01.jpg](/assets/img/data_modeling/data-modeling-08-01.jpg)
+![data-modeling-08-01.jpg](..%2F..%2Fassets%2Fimg%2Fdata_modeling%2Fdata-modeling-08-01.jpg)
 
 2. 복합 속성이 사용된 릴레이션
 주소 체계와 같이 시 + 군 + 읍/면/동 형식으로 분리되어 있는 경우 별도 테이블로 분리하는 것
-![data-modeling-08-02.jpg](/assets/img/data_modeling/data-modeling-08-02.jpg)
+![data-modeling-08-02.jpg](..%2F..%2Fassets%2Fimg%2Fdata_modeling%2Fdata-modeling-08-02.jpg)
 
 3. 유사한 속성이 반복된 릴레이션
 모든 속성이 단일 값을 사용해야 한다
 한 릴레이션에서 반복 형태의 속성이 있어서는 안 된다는 것
-![data-modeling-08-03.jpg](/assets/img/data_modeling/data-modeling-08-03.jpg)
+![data-modeling-08-03.jpg](..%2F..%2Fassets%2Fimg%2Fdata_modeling%2Fdata-modeling-08-03.jpg)
 ## 제2 정규화
 두 개 이상으로 구성된 PK에서 발생
 R의 모든 속성이 후보 식별자 전체에 종속
@@ -47,24 +47,24 @@ R의 모든 속성이 후보 식별자 전체에 종속
 따라서 2정규형이기 위해서는 모든 비 식별자 속성은 후보 식별자 속성에 완전 함수 종속돼야 한다
 
 일반 속성 중에서 후보 식별자 전체에 종속적이지 않은 속성을 찾아 기본 엔터티에서 제거하고, 그 속성의 결정자를 주 식별자로 하는 새로운 상위 엔터티를 생성
-![data-modeling-08-04.jpg](/assets/img/data_modeling/data-modeling-08-04.jpg)
+![data-modeling-08-04.jpg](..%2F..%2Fassets%2Fimg%2Fdata_modeling%2Fdata-modeling-08-04.jpg)
 
 - 업체코드로 업체명을 식별할 수 있다.
 - 상품가격과 업체코드로 납품 가격을 식별할 수 있다.
-![data-modeling-08-05.jpg](/assets/img/data_modeling/data-modeling-08-05.jpg)
+![data-modeling-08-05.jpg](..%2F..%2Fassets%2Fimg%2Fdata_modeling%2Fdata-modeling-08-05.jpg)
 
 ## 제3 정규화
 식별자가 아닌 일반 속성 간에는 종속성이 존재하지 않는다
 3정규형의 대상이 되는 속성을 이행 종속 속성이라고 함
 일반 속성간의 종속 관계를 분해하는 것
-![data-modeling-08-06.jpg](/assets/img/data_modeling/data-modeling-08-06.jpg)
+![data-modeling-08-06.jpg](..%2F..%2Fassets%2Fimg%2Fdata_modeling%2Fdata-modeling-08-06.jpg)
 
 ## BC정규화
 릴레이션에 존재하는 종속자는 후보 식별자가 아니어야 한다
 만약, 아래와 같이 하나의 교수가 하나의 과목만 가르칠수 있다면, 
 - 과목코드로 교수코드를 식별할 수 있다.
 - 학생코드와 과목코드로 학점을 식별할 수 있다.
-![data-modeling-08-07.jpg](/assets/img/data_modeling/data-modeling-08-07.jpg)
+![data-modeling-08-07.jpg](..%2F..%2Fassets%2Fimg%2Fdata_modeling%2Fdata-modeling-08-07.jpg)
 
 ***
 > __참고자료__
