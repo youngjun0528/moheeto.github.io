@@ -120,7 +120,8 @@
   /* next/previous buttons */
   &--pager {
     display: block;
-    padding: 1em 2em;
+    padding: 0.5em 2em 0em 2em;
+    height: 4em;
     float: left;
     width: 50%;
     font-family: $sans-serif;
@@ -152,6 +153,12 @@
       pointer-events: none;
       cursor: not-allowed;
     }
+
+      .child-text {
+          font-size: $type-size-6;
+          margin-top: 0.2em;
+          padding-top: 0.2em;
+      }
   }
 }
 

@@ -1,14 +1,45 @@
-{% if page.previous or page.next %}
-  <nav class="pagination">
-    {% if page.previous %}
-      <a href="{{ page.previous.url | relative_url }}" class="pagination--pager" title="{{ page.previous.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
+{% assign cat = page.categories[0] %}
+{% assign cat_list = site.categories[cat] %}
+{% if cat_list %}
+{% assign sort_cat_list = cat_list | sort: "title" | reverse %}
+{% for post in sort_cat_list %}
+{% if post.url == page.url %}
+{% assign prevIndex = forloop.index0 | minus: 1 %}
+{% assign nextIndex = forloop.index0 | plus: 1 %}
+{% if forloop.first == false %}
+{% assign next_post = sort_cat_list[prevIndex] %}
+{% endif %}
+{% if forloop.last == false %}
+{% assign prev_post = sort_cat_list[nextIndex] %}
+{% endif %}
+{% break %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if prev_post or next_post %}
+<nav class="pagination">
+    {% if prev_post %}
+    <a href="{{ prev_post.url }}" class="pagination--pager" title="{{ prev_post.title | markdownify | strip_html }}">
+        <span class="">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</span>
+        <span class="pagination child-text">{{ prev_post.title }}</span>
+    </a>
     {% else %}
-      <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
+    <a href="#" class="pagination--pager disabled">
+        <span class="">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</span>
+        <span class="pagination child-text">첫 번째 글입니다</span>
+    </a>
     {% endif %}
-    {% if page.next %}
-      <a href="{{ page.next.url | relative_url }}" class="pagination--pager" title="{{ page.next.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
+    {% if next_post %}
+    <a href="{{ next_post.url }}" class="pagination--pager" title="{{ next_post.title | markdownify | strip_html }}">
+        <span class="">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</span>
+        <span class="pagination child-text">{{ next_post.title }}</span>
+    </a>
     {% else %}
-      <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
+    <a href="#" class="pagination--pager disabled">
+        <span class="">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</span>
+        <span class="pagination child-text">마지막 글입니다</span>
+    </a>
     {% endif %}
-  </nav>
+</nav>
 {% endif %}
