@@ -61,6 +61,13 @@
                 {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "performance" %}
+                <li><a href="/categories/performance" class="">FrontEnd Performance ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
             <a href="/categories/sw-engineering" class=""><span class="nav__sub-title">Software Engineering</span></a>
             <ul>
                 {% for category in site.categories %}
