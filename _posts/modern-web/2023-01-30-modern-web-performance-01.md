@@ -26,7 +26,8 @@ toc_label: "01 - Performance"
 > 
 > 병목 코드 최적화
 
-# Lighthouse(Google Chrome)
+# Tools
+## Lighthouse(Google Chrome)
 ![performance-01.png](..%2F..%2Fassets%2Fimg%2Fperformance%2Fperformance-01.png)
 - Performance 번수는 웹페이지의 종합 성능으로 웹 바이탈(Web Vitals) 이라고도 한다.
 - First Contentful Paint(FCP) : 가중치 10%
@@ -48,7 +49,7 @@ toc_label: "01 - Performance"
 - Diagnostics
   - 속도와 직접적인 관계는 없지만 성능 향상에 도움을 주는 제안
 
-# Performance(Google Chrome)
+## Performance panel (Google Chrome)
 ![performance-02.png](..%2F..%2Fassets%2Fimg%2Fperformance%2Fperformance-02.png)
 - CPU Chart,
     - 노란색 : 자바스크릭트 실행
@@ -89,7 +90,8 @@ toc_label: "01 - Performance"
     - 가장 상위의 작업 부터 하위 작업까지 Tree View
 - Event Log
     - 발생한 이벤트 목록
-  
+
+# Optimization  
 ## 이미지 사이즈 최적화 : Properly size images
 - 이미지 사이즈가 너무 커서 렌더링에 오래 걸림.
 - 1200px X 1200px -> 120px X 120px 로 변환 필요

@@ -26,6 +26,7 @@ toc_label: "02 - Performance"
 > 
 > 이미지 사전 로딩
 
+# Optimization
 ## 애니메이션 최적화
 ### 브라우저 랜더링 과정 
 - 주요 랜더링 과정(Critical Rendering Path) or 픽셀 파이프라인(Pixel Pipeline)
