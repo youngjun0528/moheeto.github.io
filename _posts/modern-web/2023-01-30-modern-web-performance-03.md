@@ -18,13 +18,10 @@ toc_label: "03 - Performance"
 ---
 
 # 최적화 항목
-> 이미지 사이즈 최적화
-> 
-> 폰트 최적화
-> 
-> 캐시 최적화
-> 
-> 불필요한 CSS 제거 
+> - 이미지 사이즈 최적화
+> - 폰트 최적화
+> - 캐시 최적화
+> - 불필요한 CSS 제거 
 
 # Tools
 ## Coverage panel (Google Chrome)
