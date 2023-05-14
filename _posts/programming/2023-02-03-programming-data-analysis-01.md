@@ -1,22 +1,20 @@
-[---
+---
 title: "Pandas Optimization"
 description:
 published: true
 date: 2023-05-03T15:00:00.000Z
 tags:
-
 - Data Analysis
 - Pandas
-  editor: markdown
-  dateCreated: 2023-05-03T15:00:00.000Z
-  categories:
+editor: markdown
+dateCreated: 2023-05-03T15:00:00.000Z
+categories:
 - data_analysis
-  author_profile: true
-  sidebar_main: true
-  toc: true
-  toc_sticky: true
-  toc_label: "Pandas Optimization"
-
+author_profile: true
+sidebar_main: true
+toc: true
+toc_sticky: true
+toc_label: "Pandas Optimization"
 ---
 
 ## Python Memory Profiling
@@ -96,6 +94,7 @@ tags:
 ## 최적화 방법
 
 ### 최적화
+
 - 테스트 데이터
     - https://www.kaggle.com/datasets/greegtitan/indonesia-wikipedia-pages?select=wikipedia_id-clean.csv
     - Size : 1.07GB
@@ -173,8 +172,10 @@ https://docs.python.org/ko/3.9/c-api/memory.html
 </table>
 
 #### Memory 최적화
+
 - https://towardsdatascience.com/seven-killer-memory-optimization-techniques-every-pandas-user-should-know-64707348ab20
 - https://towardsdatascience.com/how-to-handle-large-datasets-in-python-1f077a7e7ecf
+
 ##### 1) 단순 read_csv
 
 - 아무런 옵션 없이 CSV 파일을 읽어들일 경우
@@ -319,50 +320,55 @@ https://docs.python.org/ko/3.9/c-api/memory.html
     - used 1322.2930 MiB RAM in 17.55s, peaked 18.76 MiB above current, total RAM usage 1383.90 MiB
     - 기본 대비 800 MB 감소함.
     - 데이터 변환 작업은 Chunk Loop 안에서 처리하도록 한다. ( 작은 사이즈에서 변환 후 합치는 방법이 성능 면에서 좋다.)
-      - 하지만 변환 작업에 소요되는 시간은 늘어난다.
+        - 하지만 변환 작업에 소요되는 시간은 늘어난다.
     - string[pyarrow] 타입의 메모리 감소량은 상당하다.
 
 ##### 5) DataFrame Manipulation
+
 - Pandas 에서 Dataframe을 조작하는 방법 중에서 아래 2가지 방법이 존재한다.
 - 새로운 Dataframe 을 사용하지 않는 경우 Inplace Assignment로 조작을 권장한다.
-  - Standard Assignment
-    - 새로운 Dataframe을 Copy 하여 데이터를 조작하는 방법
-    ```python
-    df_copy = df.fillna(0)
-    ```
-  - Inplace Assignment
-    - 기존의 Dataframe에 바로 데이터를 조작하는 방법
-    ```python
-    df.fillna(0, inplace = True)
-    ```
+    - Standard Assignment
+        - 새로운 Dataframe을 Copy 하여 데이터를 조작하는 방법
+      ```python
+      df_copy = df.fillna(0)
+      ```
+    - Inplace Assignment
+        - 기존의 Dataframe에 바로 데이터를 조작하는 방법
+      ```python
+      df.fillna(0, inplace = True)
+      ```
 
 ##### 결론
+
 - Pandas 의 메모리 최적화에 2가지 포인트는 다음과 같다.
-  - 큰 파일은 작은 파일로 나누어서 읽는다.
-  - String 문자열은 메모리 사용량에 가장 큰 영향을 미친다. 문자열은 적절한 Data Type 으로 변환 한다.
+    - 큰 파일은 작은 파일로 나누어서 읽는다.
+    - String 문자열은 메모리 사용량에 가장 큰 영향을 미친다. 문자열은 적절한 Data Type 으로 변환 한다.
 - 시스템 리소스의 자원 중 메모리와 CPU 성능, 시간과 비용 사이에서 적절한 타협점을 찾아야 한다.
 
-
 #### Run-Time 최적화
+
 - https://towardsdatascience.com/five-killer-optimization-techniques-every-pandas-user-should-know-266662bd1163
 - https://towardsdatascience.com/why-i-stopped-dumping-dataframes-to-a-csv-and-why-you-should-too-c0954c410f8f
+
 ##### CSV File Read In/Out
+
 - CSV File multiple time read : Convert Pickle or Feather or Parquet
     - 각 파일별 특징은 아래 URL 에서 확인 가능하다.
     - https://bawaji94.medium.com/feather-vs-parquet-vs-csv-vs-jay-55206a9a09b0
     - 가장 효율적인 것은 Feather 이지만, boolean 데이터에는 적합하지 않는 것 같다.
-    - IO 성능은 Parquet 과 Feather 은 유사하지만, 
-      - 다른 라이브러리와의 활용면에서 Parquet 형식이 더 우월한 것 같다. (Apache Spark 또는 Hadoop )
-      - Boolean 데이터 형식의 경우 Parquet 가 더 우수하다.
-      - Feather은 최초 장기 저장용 데이터로 설계되진 않고, 압축시 ZSTD 를 권장한다. ( Parquet 는 gzip )
+    - IO 성능은 Parquet 과 Feather 은 유사하지만,
+        - 다른 라이브러리와의 활용면에서 Parquet 형식이 더 우월한 것 같다. (Apache Spark 또는 Hadoop )
+        - Boolean 데이터 형식의 경우 Parquet 가 더 우수하다.
+        - Feather은 최초 장기 저장용 데이터로 설계되진 않고, 압축시 ZSTD 를 권장한다. ( Parquet 는 gzip )
     - 문제점
-      - detype 에 대한 제어가 불가능하다. (특히 catogory 데이터)
-      - dtype backend를 pyarrow를 사용하면 메모리 사용량이 낮아지지만 모든 데이터 타입이 pyarrow 형태로 바뀐다.
-      - 기존보다 속도는 2개 빨라지고 메모리 사용량은 10% 정도 증가한다.
-      - pyarrow 타입에 대한 연구가 필요함
+        - detype 에 대한 제어가 불가능하다. (특히 catogory 데이터)
+        - dtype backend를 pyarrow를 사용하면 메모리 사용량이 낮아지지만 모든 데이터 타입이 pyarrow 형태로 바뀐다.
+        - 기존보다 속도는 2개 빨라지고 메모리 사용량은 10% 정도 증가한다.
+        - pyarrow 타입에 대한 연구가 필요함
 
 
 - CSV File Only One read : Datatable Library
+
 2. Data Filtering with Group by Categorical data
     ```Python
     ## Approach 1
@@ -404,5 +410,5 @@ https://docs.python.org/ko/3.9/c-api/memory.html
     for row in df.itertuples(): 
         salary_sum += row._4
     ```
-   
+
 #### Pandas AWS S3 Access
