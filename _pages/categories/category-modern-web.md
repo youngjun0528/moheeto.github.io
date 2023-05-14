@@ -26,3 +26,10 @@ sidebar_main: true
   {% assign posts = posts | sort: 'title' %}
 {% endif %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
+
+## Front-End Performance
+{% assign posts = site.categories.performance %}
+{% if posts %}
+{% assign posts = posts | sort: 'title' %}
+{% endif %}
+{% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

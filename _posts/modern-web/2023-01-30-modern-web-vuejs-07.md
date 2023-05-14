@@ -2,13 +2,13 @@
 title: "07 - Binding"
 description: 
 published: true
-date: 2021-07-01T07:06:02.006Z
+date: 2023-02-08T15:56:00.000Z
 tags: 
 - modern-web
 - FrontEnd
 - Vue.js
 editor: markdown
-dateCreated: 2021-04-19T22:20:10.356Z
+dateCreated: 2023-02-06T10:54:00.000Z
 categories: 
 - vuejs
 author_profile: true

@@ -18,3 +18,20 @@
     - 문제는 없으나, jekyll-sass-converter를 이전 버전으로 Fix 해두어야 할 듯
 - 참고
   - https://eona1301.github.io/a_to_z/GithubBlog/
+- 페이지 추가시 수정할 부분
+  - assets
+    - 이미지 파일들
+  - _posts
+    - 게시물
+    - _pages/{directory}
+      - 대분류
+  - _ pages
+    - 정적 페이지
+    - _pages/reading.md
+      - 읽은 책들
+    - _pages/portfolio.md
+      - 포트폴리오
+    - _pages/categories
+      - 카테고리 목록
+  - _includes/nav_list_main
+    - 사이드 메뉴 설정

@@ -21,23 +21,23 @@
 <nav class="pagination">
     {% if prev_post %}
     <a href="{{ prev_post.url }}" class="pagination--pager" title="{{ prev_post.title | markdownify | strip_html }}">
-        <span class="">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</span>
+        <span class="pagination child-text">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</span>
         <span class="pagination child-text">{{ prev_post.title }}</span>
     </a>
     {% else %}
     <a href="#" class="pagination--pager disabled">
-        <span class="">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</span>
+        <span class="pagination child-text">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</span>
         <span class="pagination child-text">첫 번째 글입니다</span>
     </a>
     {% endif %}
     {% if next_post %}
     <a href="{{ next_post.url }}" class="pagination--pager" title="{{ next_post.title | markdownify | strip_html }}">
-        <span class="">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</span>
+        <span class="pagination child-text">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</span>
         <span class="pagination child-text">{{ next_post.title }}</span>
     </a>
     {% else %}
     <a href="#" class="pagination--pager disabled">
-        <span class="">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</span>
+        <span class="pagination child-text">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</span>
         <span class="pagination child-text">마지막 글입니다</span>
     </a>
     {% endif %}

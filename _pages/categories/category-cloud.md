@@ -12,3 +12,10 @@ sidebar_main: true
   {% assign posts = posts | sort: 'title' %}
 {% endif %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
+
+## Docker
+{% assign posts = site.categories.docker %}
+{% if posts %}
+  {% assign posts = posts | sort: 'title' %}
+{% endif %}
+{% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

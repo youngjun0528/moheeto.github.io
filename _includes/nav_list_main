@@ -61,11 +61,25 @@
                 {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "performance" %}
+                <li><a href="/categories/performance" class="">FrontEnd Performance ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
             <a href="/categories/sw-engineering" class=""><span class="nav__sub-title">Software Engineering</span></a>
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "tdd" %}
                 <li><a href="/categories/tdd" class="">TDD ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "serverless" %}
+                <li><a href="/categories/serverless" class="">Serverless ({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
@@ -84,14 +98,6 @@
                 {% endif %}
                 {% endfor %}
             </ul>
-            <a href="/categories/os" class=""><span class="nav__sub-title">OS</span></a>
-            <ul>
-                {% for category in site.categories %}
-                {% if category[0] == "docker" %}
-                <li><a href="/categories/docker" class="">Docker ({{category[1].size}})</a></li>
-                {% endif %}
-                {% endfor %}
-            </ul>
             <a href="/categories/programming" class=""><span class="nav__sub-title">Programming</span></a>
             <ul>
                 {% for category in site.categories %}
@@ -107,11 +113,25 @@
                 {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "data_analysis" %}
+                <li><a href="/categories/data_analysis" class="">Data Analysis ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
             <a href="/categories/cloud" class=""><span class="nav__sub-title">Cloud</span></a>
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "jenkins" %}
                 <li><a href="/categories/jenkins" class="">Jenkins ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "docker" %}
+                <li><a href="/categories/docker" class="">Docker ({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>

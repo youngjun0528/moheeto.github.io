@@ -2,13 +2,13 @@
 title: "10 - Method"
 description: 
 published: true
-date: 2021-08-11T03:16:57.981Z
+date: 2023-02-08T15:56:00.000Z
 tags: 
 - modern-web
 - FrontEnd
 - Vue.js
 editor: markdown
-dateCreated: 2021-05-10T06:33:38.057Z
+dateCreated: 2023-02-06T10:54:00.000Z
 categories: 
 - vuejs
 author_profile: true

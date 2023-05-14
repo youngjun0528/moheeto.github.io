@@ -2,13 +2,13 @@
 title: "05 - Component"
 description: 
 published: true
-date: 2021-07-01T07:05:44.171Z
+date: 2023-02-08T15:56:00.000Z
 tags: 
 - modern-web
 - FrontEnd
 - Vue.js
 editor: markdown
-dateCreated: 2021-04-12T06:49:16.570Z
+dateCreated: 2023-02-06T10:54:00.000Z
 categories: 
 - vuejs
 author_profile: true
