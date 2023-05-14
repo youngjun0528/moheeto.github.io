@@ -76,6 +76,13 @@
                 {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "serverless" %}
+                <li><a href="/categories/serverless" class="">Serverless ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
             <a href="/categories/certificate" class=""><span class="nav__sub-title">Certificate</span></a>
             <ul>
                 {% for category in site.categories %}
@@ -88,14 +95,6 @@
                 {% for category in site.categories %}
                 {% if category[0] == "linux_master" %}
                 <li><a href="/categories/linux_master" class="">Linux Master ({{category[1].size}})</a></li>
-                {% endif %}
-                {% endfor %}
-            </ul>
-            <a href="/categories/os" class=""><span class="nav__sub-title">OS</span></a>
-            <ul>
-                {% for category in site.categories %}
-                {% if category[0] == "docker" %}
-                <li><a href="/categories/docker" class="">Docker ({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
@@ -114,11 +113,25 @@
                 {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "data_analysis" %}
+                <li><a href="/categories/data_analysis" class="">Data Analysis ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
             <a href="/categories/cloud" class=""><span class="nav__sub-title">Cloud</span></a>
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "jenkins" %}
                 <li><a href="/categories/jenkins" class="">Jenkins ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "docker" %}
+                <li><a href="/categories/docker" class="">Docker ({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>

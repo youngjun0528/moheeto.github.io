@@ -2,13 +2,13 @@
 title: "01 - Vue.js"
 description: 
 published: true
-date: 2021-05-07T04:27:10.274Z
+date: 2023-02-08T15:56:00.000Z
 tags: 
 - modern-web
 - FrontEnd
 - Vue.js
 editor: markdown
-dateCreated: 2021-04-19T05:36:56.365Z
+dateCreated: 2023-01-30T21:49:00.000Z
 categories: 
 - vuejs
 author_profile: true

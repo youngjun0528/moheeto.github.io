@@ -2,13 +2,13 @@
 title: "04 - 컴포넌트 라이프사이클"
 description: 
 published: true
-date: 2021-08-11T03:15:59.726Z
+date: 2023-02-08T15:56:00.000Z
 tags: 
 - modern-web
 - FrontEnd
 - Vue.js
 editor: markdown
-dateCreated: 2021-05-10T07:45:39.635Z
+dateCreated: 2023-02-06T10:54:00.000Z
 categories: 
 - vuejs
 author_profile: true

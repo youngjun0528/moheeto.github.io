@@ -2,7 +2,7 @@
 title: "3.4.1 통계학"
 description: 
 published: true
-date: 2023-01-19T03:00:45.029Z
+date: 2021-06-11T06:35:24.506Z
 tags: 
 - certificate
 - ADsP

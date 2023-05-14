@@ -12,7 +12,7 @@ tags:
 editor: markdown
 dateCreated: 2021-10-19T01:04:35.918Z
 categories: 
-- jenkins
+- serverless
 author_profile: true
 sidebar_main: true
 toc: true
@@ -333,7 +333,6 @@ class TestSampleLambda(TestCase):
 ```
 
 # 적용 사례
-## T20-Common 적용 사례
 ### JenKins Build 자동화 With UnitTest in Docker
 ### Jenkins Integration 테스트 자동화 ( Blue Green ? )
 

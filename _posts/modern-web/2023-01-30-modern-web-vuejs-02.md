@@ -2,13 +2,13 @@
 title: "02 - Vuex 상태관리"
 description: 
 published: true
-date: 2021-09-03T08:54:56.858Z
+date: 2023-02-08T15:56:00.000Z
 tags: 
 - modern-web
 - FrontEnd
 - Vue.js
 editor: markdown
-dateCreated: 2021-09-03T03:35:56.147Z
+dateCreated: 2023-02-06T10:54:00.000Z
 categories: 
 - vuejs
 author_profile: true

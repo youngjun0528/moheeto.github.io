@@ -2,7 +2,7 @@
 title: "1과목. 리눅스 운영 및 관리"
 description: 
 published: true
-date: 2023-01-19T03:00:21.663Z
+date: 2021-05-14T08:22:35.542Z
 tags: 
 - certificate
 - Linux Master

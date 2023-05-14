@@ -2,7 +2,7 @@
 title: "03 - Performance"
 description: 
 published: true
-date: 2023-04-24T07:06:23.366Z
+date: 2023-04-26T16:00:00.000Z
 tags: 
 - modern-web
 - FrontEnd-Performance

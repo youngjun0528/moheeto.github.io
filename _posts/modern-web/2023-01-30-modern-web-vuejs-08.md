@@ -2,13 +2,13 @@
 title: "08 - Loop"
 description: 
 published: true
-date: 2021-08-11T03:16:18.997Z
+date: 2023-02-08T15:56:00.000Z
 tags: 
 - modern-web
 - FrontEnd
 - Vue.js
 editor: markdown
-dateCreated: 2021-05-10T06:19:30.203Z
+dateCreated: 2023-02-06T10:54:00.000Z
 categories: 
 - vuejs
 author_profile: true

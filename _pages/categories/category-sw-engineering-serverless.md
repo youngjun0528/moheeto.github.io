@@ -1,13 +1,12 @@
 ---
-title: "OS"
+title: "Serverless"
 layout: archive
-permalink: /categories/os
+permalink: /categories/serverless
 author_profile: true
 sidebar_main: true
 ---
 
-## Docker
-{% assign posts = site.categories.docker %}
+{% assign posts = site.categories.serverless %}
 {% if posts %}
   {% assign posts = posts | sort: 'title' %}
 {% endif %}

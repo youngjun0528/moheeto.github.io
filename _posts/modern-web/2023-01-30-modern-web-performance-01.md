@@ -2,12 +2,12 @@
 title: "01 - Performance"
 description: 
 published: true
-date: 2021-08-11T03:17:55.976Z
+date: 2023-04-26T16:00:00.000Z
 tags: 
 - modern-web
 - FrontEnd-Performance
 editor: markdown
-dateCreated: 2021-05-10T07:06:23.366Z
+dateCreated: 2023-04-21T15:05:00.000Z
 categories: 
 - performance
 author_profile: true
