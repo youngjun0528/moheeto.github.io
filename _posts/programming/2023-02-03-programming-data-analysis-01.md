@@ -352,63 +352,174 @@ https://docs.python.org/ko/3.9/c-api/memory.html
 
 ##### CSV File Read In/Out
 
-- CSV File multiple time read : Convert Pickle or Feather or Parquet
-    - 각 파일별 특징은 아래 URL 에서 확인 가능하다.
-    - https://bawaji94.medium.com/feather-vs-parquet-vs-csv-vs-jay-55206a9a09b0
-    - 가장 효율적인 것은 Feather 이지만, boolean 데이터에는 적합하지 않는 것 같다.
-    - IO 성능은 Parquet 과 Feather 은 유사하지만,
-        - 다른 라이브러리와의 활용면에서 Parquet 형식이 더 우월한 것 같다. (Apache Spark 또는 Hadoop )
-        - Boolean 데이터 형식의 경우 Parquet 가 더 우수하다.
-        - Feather은 최초 장기 저장용 데이터로 설계되진 않고, 압축시 ZSTD 를 권장한다. ( Parquet 는 gzip )
-    - 문제점
-        - detype 에 대한 제어가 불가능하다. (특히 catogory 데이터)
-        - dtype backend를 pyarrow를 사용하면 메모리 사용량이 낮아지지만 모든 데이터 타입이 pyarrow 형태로 바뀐다.
-        - 기존보다 속도는 2개 빨라지고 메모리 사용량은 10% 정도 증가한다.
-        - pyarrow 타입에 대한 연구가 필요함
+###### CSV File multiple time read : Convert Pickle or Feather or Parquet
+- 각 파일별 특징은 아래 URL 에서 확인 가능하다.
+- https://bawaji94.medium.com/feather-vs-parquet-vs-csv-vs-jay-55206a9a09b0
+- 가장 효율적인 것은 Feather 이지만, boolean 데이터에는 적합하지 않는 것 같다.
+- IO 성능은 Parquet 과 Feather 은 유사하지만,
+    - 다른 라이브러리와의 활용면에서 Parquet 형식이 더 우월한 것 같다. (Apache Spark 또는 Hadoop )
+    - Boolean 데이터 형식의 경우 Parquet 가 더 우수하다.
+    - Feather은 최초 장기 저장용 데이터로 설계되진 않고, 압축시 ZSTD 를 권장한다. ( Parquet 는 gzip )
+- 문제점
+    - detype 에 대한 제어가 불가능하다. (특히 catogory 데이터)
+    - dtype backend를 pyarrow를 사용하면 메모리 사용량이 낮아지지만 모든 데이터 타입이 pyarrow 형태로 바뀐다.
+    - 기존보다 속도는 2개 빨라지고 메모리 사용량은 10% 정도 증가한다.
+    - pyarrow 타입에 대한 연구가 필요함
 
-
-- CSV File Only One read : Datatable Library
-
-2. Data Filtering with Group by Categorical data
-    ```Python
-    ## Approach 1
-    df1 = data[data["Company Name"] == "Amazon"]
-    print("df1 type: ", type(df1))
+- Step 1. 기존 CSV 파일을 Parquet 로 변환하여 분할 저장
+  - chunksize 옵션을 사용하여 10000 단위로 parquet 파일로 변환한다.
+  - timestamp 는 parquet 파일 변환 전에 timestamp 값으로 변환한다.
+  - ```python
+    import gc
+    import pandas as pd
+    from pandas.api.types import union_categoricals
     
-    ## Approach 2
-    df2 = data_grp.get_group("Amazon")
-    print("df2 type: ", type(df2))
+    data_df = pd.DataFrame()
+    data_types = {'id':'int64',
+                  'timestamp': 'string[pyarrow]',
+                  'text':'string[pyarrow]',
+                  'check':'category'}
+    date_format = '%Y-%m-%dT%H:%M:%SZ'
+    parse_dates = ['timestamp']
+    index = 0
+    for chunk in pd.read_csv('data/wikipedia_id-clean.csv', chunksize=10000, usecols=data_types.keys(), dtype=data_types, parse_dates=parse_dates, date_format=date_format):
+        chunk['timestamp'] = pd.to_datetime(chunk['timestamp'], utc=True)
+        chunk.to_parquet('wikipedia_id-clean_{}.parquet'.format(index))
+        index += 1
+    del [[chunk]]
+    gc.collect()
     ```
-3. Dataframe Merge (Inner Join)
-    ```Python
-    ## Approach 1: pd.merge()
-    pd.merge(df1, df2, on = "col_a", how = "inner")
-    
-    ## Approach 2: join()
-    ## Make the merge column as the index.
-    df1.set_index("col_a", inplace=True)
-    df2.set_index("col_a", inplace=True)
-    df1.join(df2)
+  - 분석
+    - ![data-analysis-05](..%2F..%2Fassets%2Fimg%2Fdata_analysis%2Fdata-analysis-05.png)
+    - peak memory: 478.85 MiB, increment: 416.58 MiB
+    - used 278.6445 MiB RAM in 19.85s, peaked 138.27 MiB above current, total RAM usage 340.41 MiB
+    - 단순히 파일을 분할 저장하고, concat 하여 최종 Merge 파일을 만들지 않기 때문에 메모리 사용량이 적다.
+
+- Step 2. 분할된 Parquet 를 읽어서 dataframe 으로 변환
+  - ```python
+    import os
+    import gc
+    import pandas as pd
+    data_df = pd.DataFrame()
+    for file in sorted(os.listdir('division')):
+        chunk = pd.read_parquet(os.path.join('division', file), dtype_backend='pyarrow')
+        data_df = pd.concat([data_df, chunk], ignore_index=True)
+    del [[chunk]]
+    gc.collect()
     ```
-4. Group By Count using value_counts()
-    ```Python
-    ## Approach 1
-    data["Company Name"].value_counts()
-   
-    ## Approach 2
-    data.groupby("Company Name").size()
-    ```
-5. DataFrame Iterating
-    ```Python
-    ## Approach 1
-    for i in range(len(df)):
-        salary_sum += df.iloc[i]['Employee Salary']
-    ## Approach 2
-    for index, row in df.iterrows():
-        salary_sum += row['Employee Salary']
-    ## Approach 3
-    for row in df.itertuples(): 
-        salary_sum += row._4
-    ```
+  - 분석
+    - ![data-analysis-06](..%2F..%2Fassets%2Fimg%2Fdata_analysis%2Fdata-analysis-06.png)
+    - peak memory: 1308.43 MiB, increment: 1246.38 MiB
+    - used 1229.2188 MiB RAM in 4.19s, peaked 3.56 MiB above current, total RAM usage 1290.77 MiB
+    - File Read 속도는 기존 대비 17초 에서 4초로 1/3 가량 감소한다.
+    - read_parquet 할 때에는 to_parquet 수행시 저장된 dtype을 Meta 데이터에 기억하고 있어서 그대로 가져올 수 있다.
+    - 다만, dtype_backend='pyarrow' 로 설정하여야 메모리 감소 효과가 있다.
+      - read_parquet 로 읽을 때는 각 컬럼 별 dtype 지정이 불가능하여 각 컬럼별 type 변환이 필요하여 메모리 사용량이 높아진다.
+      - dtype_backend='pyarrow' 로 설정할 경우 read 시점에 pyarrow 타입으로 일괄 지정되어 메모리 사용량이 낮아진다.
+
+###### CSV File Only One read : Datatable Library
+- 단일 노드에서 대용량 파일을 읽을 수 있도록 설계된 Python 패키지이다.
+```python
+      import datatable as dt
+      import pandas as pd
+      dt_df = dt.fread('data/wikipedia_id-clean.csv')
+      pd_df = dt_df.to_pandas()
+```
+- 분석
+  - peak memory: 3059.54 MiB, increment: 2997.98 MiB
+  - used 2968.8203 MiB RAM in 4.44s, peaked 0.00 MiB above current, total RAM usage 3030.32 MiB
+  - 속도는 4초대로 매우 빠르지만, 메모리 사용량이 매우 높다.
+  - 단점
+    - fread 에서 분할로 읽을 수 있는 chunk 옵션이 없다.
+    - 특정 컬럼을 읽을 수 없다. ( CSV 파일에서 읽을 경우 )
+    - to_pandas 변환시 dtype 지정이 불가능 하다.
+  - 즉, 속도를 위해서 컴퓨팅 자원을 최대한 사용하는 것이 목적인 패키지 이다.
+
+#### 기타 방법
+- 아래 기술된 방법들은 특정 상황에서 사용 가능한 성능 개선 방법으로 고려해 볼 수 있다.
+
+##### Data Filtering with Group by Categorical data
+- 카테고리 데이터에 대한 그룹화는 아래와 같은 경우에 속도 향상이 가능하다.
+- Dataframe 에 대한 직접 필터링 보다는 Category(범주형) 컬럼에 대해서 Group by 이후 get_group 이 효율적이다.
+```Python
+## Approach 1
+df1 = data_df[data_df["check"] == "A"]
+
+## Approach 2
+data_grp = data_df.groupby("check")
+df2 = data_grp.get_group("A")
+```
+
+##### Dataframe Merge (Inner Join)
+- Inner 조인의 경우에는 index를 기준으로 join 하는 것이 좋다.
+- 하지만, 대부분 merge 함수를 쓸 때에는 Outer Join 을 위해서 사용한다.
+```Python
+## Approach 1: pd.merge()
+pd.merge(df1, df2, on = "col_a", how = "inner")
+
+## Approach 2: join()
+## Make the merge column as the index.
+df1.set_index("col_a", inplace=True)
+df2.set_index("col_a", inplace=True)
+df1.join(df2)
+```
+##### Group By Count using value_counts()
+- 단순히 Group By Count 를 수행할 때에는 출력 값에 대한 size를 계산하는 것보다 value_counts 를 호출한다.
+```Python
+## Approach 1
+data["Company Name"].value_counts()
+
+## Approach 2
+data.groupby("Company Name").size()
+```
+
+##### DataFrame Iterating
+- Dataframe 의 반복 순회는 가급적 피하는 것이 좋다.
+- 부득이하게 모든 열을 확인하고자 하는 경우에는 itertuples 를 활용하자.
+```Python
+## Approach 1
+for i in range(len(df)):
+    salary_sum += df.iloc[i]['Employee Salary']
+## Approach 2
+for index, row in df.iterrows():
+    salary_sum += row['Employee Salary']
+## Approach 3
+for row in df.itertuples(): 
+    salary_sum += row._4
+```
 
 #### Pandas AWS S3 Access
+- Pandas 의 read_csv의 옵션 중 file path를 S3로 바로 지정이 가능한다.
+- Requirement Lib : https://github.com/s3fs-fuse/s3fs-fuse
+- 아래 2가지 방법을 비교하여도 성능 상의 차이는 없다.
+  - s3fs 는 boto3 의 wrapper 와 같은 역할 
+
+- AS-IS : 기본 방법
+```python
+import io
+import pandas as pd
+usecols_list = ['id', 'timestamp', 'text', 'check']
+data_df = pd.DataFrame()
+for chunk in pd.read_csv(s3.get_object(Bucket=DASHBOARD_BUCKET, Key='wikipedia_id-clean.csv.gz')["Body"], 
+                         chunksize=10000, usecols=usecols_list, compression='gzip'):
+    data_df = pd.concat([data_df, chunk], ignore_index=True)
+```
+- 분석
+  - used 1741.6992 MiB RAM in 151.32s, peaked 349.78 MiB above current, total RAM usage 1906.40 MiB
+  - ![data-analysis-08](..%2F..%2Fassets%2Fimg%2Fdata_analysis%2Fdata-analysis-08.png)
+- TO-BE : s3fs
+```python
+import pandas as pd
+usecols_list = ['id', 'timestamp', 'text', 'check']
+data_df = pd.DataFrame()
+for chunk in pd.read_csv(f"s3://{DASHBOARD_BUCKET}/wikipedia_id-clean.csv.gz",
+                         storage_options={ "key": os.environ.get('SecretAccessId'), 
+                                           "secret": os.environ.get('SecretAccessKey'), 
+                                           "token": os.environ.get('SessionToken')},
+                         chunksize=10000, usecols=usecols_list, compression='gzip'):
+    data_df = pd.concat([data_df, chunk], ignore_index=True)
+```
+- 분석
+  - used 1839.0078 MiB RAM in 154.79s, peaked 0.00 MiB above current, total RAM usage 1930.38 MiB
+  - ![data-analysis-07](..%2F..%2Fassets%2Fimg%2Fdata_analysis%2Fdata-analysis-07.png)
+  
