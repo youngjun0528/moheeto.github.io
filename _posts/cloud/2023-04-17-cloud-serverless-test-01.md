@@ -332,8 +332,4 @@ class TestSampleLambda(TestCase):
 # End of unit test code
 ```
 
-# 적용 사례
-### JenKins Build 자동화 With UnitTest in Docker
-### Jenkins Integration 테스트 자동화 ( Blue Green ? )
-
 
