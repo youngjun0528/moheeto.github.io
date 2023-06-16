@@ -441,11 +441,12 @@ https://docs.python.org/ko/3.9/c-api/memory.html
 ##### Data Filtering with Group by Categorical data
 - 카테고리 데이터에 대한 그룹화는 아래와 같은 경우에 속도 향상이 가능하다.
 - Dataframe 에 대한 직접 필터링 보다는 Category(범주형) 컬럼에 대해서 Group by 이후 get_group 이 효율적이다.
+- Approach 1
 ```Python
-## Approach 1
 df1 = data_df[data_df["check"] == "A"]
-
-## Approach 2
+```
+- Approach 2
+```Python
 data_grp = data_df.groupby("check")
 df2 = data_grp.get_group("A")
 ```
@@ -453,37 +454,42 @@ df2 = data_grp.get_group("A")
 ##### Dataframe Merge (Inner Join)
 - Inner 조인의 경우에는 index를 기준으로 join 하는 것이 좋다.
 - 하지만, 대부분 merge 함수를 쓸 때에는 Outer Join 을 위해서 사용한다.
+- Approach 1: pd.merge()
 ```Python
-## Approach 1: pd.merge()
 pd.merge(df1, df2, on = "col_a", how = "inner")
-
-## Approach 2: join()
-## Make the merge column as the index.
+```
+- Approach 2: join()
+```python
 df1.set_index("col_a", inplace=True)
 df2.set_index("col_a", inplace=True)
 df1.join(df2)
 ```
 ##### Group By Count using value_counts()
 - 단순히 Group By Count 를 수행할 때에는 출력 값에 대한 size를 계산하는 것보다 value_counts 를 호출한다.
+- Approach 1
 ```Python
-## Approach 1
 data["Company Name"].value_counts()
-
-## Approach 2
+```
+- Approach 2
+```python
 data.groupby("Company Name").size()
 ```
 
 ##### DataFrame Iterating
 - Dataframe 의 반복 순회는 가급적 피하는 것이 좋다.
 - 부득이하게 모든 열을 확인하고자 하는 경우에는 itertuples 를 활용하자.
+- Approach 1
 ```Python
-## Approach 1
 for i in range(len(df)):
     salary_sum += df.iloc[i]['Employee Salary']
-## Approach 2
+```
+- Approach 2
+```python
 for index, row in df.iterrows():
     salary_sum += row['Employee Salary']
-## Approach 3
+```
+- Approach 3
+```python
 for row in df.itertuples(): 
     salary_sum += row._4
 ```
