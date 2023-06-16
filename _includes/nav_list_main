@@ -87,7 +87,7 @@
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "adsp" %}
-                <li><a href="/categories/tdd" class="">ADsP ({{category[1].size}})</a></li>
+                <li><a href="/categories/adsp" class="">ADsP ({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
