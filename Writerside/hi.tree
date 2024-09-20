@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="hi"
+                 name="Help Instance"
+                 start-page="Start-Pages.topic">
+
+    <toc-element topic="Start-Pages.topic"/>
+    <toc-element topic="data_modeling.topic">
+        <toc-element topic="2023-01-27-data-modeling-01.md"/>
+        <toc-element topic="2023-01-27-data-modeling-02.md"/>
+        <toc-element topic="2023-01-27-data-modeling-03.md"/>
+        <toc-element topic="2023-01-27-data-modeling-04.md"/>
+        <toc-element topic="2023-01-27-data-modeling-05.md"/>
+        <toc-element topic="2023-01-27-data-modeling-06.md"/>
+        <toc-element topic="2023-01-27-data-modeling-07.md"/>
+        <toc-element topic="2023-01-27-data-modeling-08.md">
+        </toc-element>
+        <toc-element topic="2023-01-27-data-modeling-09.md"/>
+        <toc-element topic="2023-01-27-data-modeling-10.md"/>
+        <toc-element topic="2023-01-27-data-modeling-11.md"/>
+        <toc-element topic="2023-01-27-data-modeling-12.md"/>
+        <toc-element topic="2023-01-27-data-modeling-13.md"/>
+    </toc-element>
+    <toc-element topic="cloud.topic">
+        <toc-element topic="2023-04-17-cloud-docker-02.md"/>
+        <toc-element topic="2023-04-17-cloud-docker-01.md"/>
+        <toc-element topic="2023-06-01-windows-wsl-01.md"/>
+        <toc-element topic="2023-04-17-cloud-serverless-test-01.md"/>
+        <toc-element topic="2023-02-03-cloud-jenkins-01.md"/>
+    </toc-element>
+    <toc-element topic="Unittest.topic">
+        <toc-element topic="Unittest-Goals.md"/>
+        <toc-element topic="What-is-unittest.md"/>
+        <toc-element topic="Unittest-Structure.md"/>
+        <toc-element topic="Good-Unittest.md"/>
+        <toc-element topic="Mock-Test.md"/>
+        <toc-element topic="Unittest-Style.md"/>
+        <toc-element topic="Refactoring.md"/>
+        <toc-element topic="Integration-Test.md"/>
+        <toc-element topic="Unittest-Mock.md"/>
+        <toc-element topic="Database-Test.md"/>
+        <toc-element topic="Unittest-anti-pattern.md"/>
+    </toc-element>
+    <toc-element topic="web_developer.topic">
+        <toc-element topic="vue_js.topic">
+            <toc-element topic="2023-01-30-modern-web-vuejs-01.md"/>
+            <toc-element topic="2023-01-30-modern-web-vuejs-02.md"/>
+            <toc-element topic="2023-01-30-modern-web-vuejs-03.md"/>
+            <toc-element topic="2023-01-30-modern-web-vuejs-04.md"/>
+            <toc-element topic="2023-01-30-modern-web-vuejs-05.md"/>
+            <toc-element topic="2023-01-30-modern-web-vuejs-06.md"/>
+            <toc-element topic="2023-01-30-modern-web-vuejs-07.md"/>
+            <toc-element topic="2023-01-30-modern-web-vuejs-08.md"/>
+            <toc-element topic="2023-01-30-modern-web-vuejs-09.md"/>
+            <toc-element topic="2023-01-30-modern-web-vuejs-10.md"/>
+            <toc-element topic="2023-01-30-modern-web-vuejs-11.md"/>
+            <toc-element topic="2023-01-30-modern-web-vuejs-12.md"/>
+            <toc-element topic="2023-01-30-modern-web-vuejs-13.md"/>
+        </toc-element>
+        <toc-element topic="modern_web.topic">
+            <toc-element topic="2023-01-30-modern-web-agile-01.md"/>
+            <toc-element topic="2023-01-30-modern-web-agile-02.md"/>
+            <toc-element topic="2023-01-30-modern-web-agile-03.md"/>
+            <toc-element topic="2023-01-30-modern-web-javascript-01.md"/>
+            <toc-element topic="2023-01-30-modern-web-spring-01.md"/>
+            <toc-element topic="2023-01-30-modern-web-spring-02.md"/>
+            <toc-element topic="2023-01-30-modern-web-spring-03.md"/>
+        </toc-element>
+        <toc-element topic="performance.topic">
+            <toc-element topic="2023-01-30-modern-web-performance-01.md"/>
+            <toc-element topic="2023-01-30-modern-web-performance-02.md"/>
+            <toc-element topic="2023-01-30-modern-web-performance-03.md"/>
+            <toc-element topic="2023-01-30-modern-web-performance-04.md"/>
+        </toc-element>
+    </toc-element>
+    <toc-element topic="programming.topic">
+        <toc-element topic="git.md"/>
+        <toc-element topic="2023-02-03-programming-java-01.md"/>
+        <toc-element topic="2023-02-03-programming-clean-code-01.md"/>
+        <toc-element topic="2023-02-03-programming-data-analysis-01.md"/>
+        <toc-element topic="2023-02-03-programming-data-structure-01.md"/>
+    </toc-element>
+    <toc-element topic="sw_engineering.topic">
+        <toc-element topic="wiki.md"/>
+        <toc-element topic="2023-02-03-sw-engineering-tdd-01.md"/>
+        <toc-element topic="2023-02-03-sw-engineering-tdd-02.md"/>
+        <toc-element topic="2023-02-03-sw-engineering-tdd-03.md"/>
+    </toc-element>
+    <toc-element topic="certificate.topic">
+        <toc-element topic="asdp.topic">
+            <toc-element topic="2023-02-03-certificate-asdp-01.md"/>
+        </toc-element>
+        <toc-element topic="linux_master.topic">
+            <toc-element topic="2023-02-03-certificate-linux-master-01.md"/>
+        </toc-element>
+    </toc-element>
+    <toc-element topic="large_system_design_basic.topic">
+        <toc-element topic="02-07-hotel-reserve-system.md"/>
+        <toc-element topic="01-01-scale-up-with-users.md"/>
+    </toc-element>
+    <toc-element topic="mysql-performance.topic">
+        <toc-element topic="01_query.md"/>
+    </toc-element>
+    <toc-element topic="sw_architect.topic">
+        <toc-element topic="01_sw_architect.md"/>
+    </toc-element>
+</instance-profile>

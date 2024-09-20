@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Vue.js" id="vue_js">
+
+    <p>Vue.js 관련 정리</p>
+    <p>
+        참고자료: <a href="https://product.kyobobook.co.kr/detail/S000001891064">[빠르게 배워서 바르게 적용하는 Vue.js 퀵 스타트]</a>
+    </p>
+</topic>

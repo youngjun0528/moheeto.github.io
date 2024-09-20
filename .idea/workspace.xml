@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1932aaa-2a72-4f7f-bde0-d4bc4f639b38" name="Changes" comment="Update main category of programming page">
-      <change afterPath="$PROJECT_DIR$/_posts/cloud/2023-04-17-cloud-docker-02.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_posts/temp_posts/test.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/data_analysis/data-analysis-07.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/data_analysis/data-analysis-08.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/cloud/2023-04-17-cloud-docker-01.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/cloud/2023-04-17-cloud-docker-01.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/os/2023-02-03-os-docker-01.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/programming/2023-02-03-programming-data-analysis-01.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/programming/2023-02-03-programming-data-analysis-01.md" afterDir="false" />
+    <list default="true" id="9c7839de-411d-4835-8ca4-e739b420b9ee" name="Changes" comment="Init write side pages">
+      <change beforePath="$PROJECT_DIR$/example/How-to.md" beforeDir="false" afterPath="$PROJECT_DIR$/example/How-to.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,120 +20,58 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
+  <component name="InstanceColorv3">
+    <option name="map">
+      <map>
+        <entry key="$PROJECT_DIR$/Writerside/hi.tree">
+          <value>
+            <ColorState>
+              <option name="customOrder" value="1" />
+              <option name="first">
+                <RgbState>
+                  <option name="blue" value="60" />
+                  <option name="darkBlue" value="60" />
+                  <option name="darkGreen" value="68" />
+                  <option name="darkRed" value="206" />
+                  <option name="green" value="68" />
+                  <option name="red" value="206" />
+                </RgbState>
+              </option>
+              <option name="second">
+                <RgbState>
+                  <option name="blue" value="65" />
+                  <option name="darkBlue" value="65" />
+                  <option name="darkGreen" value="126" />
+                  <option name="darkRed" value="231" />
+                  <option name="green" value="126" />
+                  <option name="red" value="231" />
+                </RgbState>
+              </option>
+            </ColorState>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
-  <component name="ProjectId" id="2KZvLqgKvYuNvt3dJnWZdi0AuEc" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2mKAZhd7NMT4lc5OejOhRIj5jzJ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/yoon/github/moheeto.github.io/assets/img/data_analysis",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ruby.rails.projectView.checked": "true",
-    "ruby.structure.view.model.defaults.configured": "true",
-    "settings.editor.selected.configurable": "configurable.group.editor",
-    "vue.rearranger.settings.migration": "true"
+    "git-widget-placeholder": "feature/writeside/init",
+    "last_opened_file_path": "/home/yoon/Github/youngjun0528.github.io"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/img/data_analysis" />
-      <recent name="$PROJECT_DIR$/assets/drawio" />
-      <recent name="$PROJECT_DIR$/_posts/assets/img" />
-      <recent name="$PROJECT_DIR$/assets/img/data_modeling" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/_posts/cloud" />
-      <recent name="$PROJECT_DIR$/_posts/os" />
-      <recent name="$PROJECT_DIR$/_posts/programming" />
-      <recent name="$PROJECT_DIR$/_posts/sw-engineering" />
-      <recent name="$PROJECT_DIR$/_posts/certificate" />
-    </key>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="f1932aaa-2a72-4f7f-bde0-d4bc4f639b38" name="Changes" comment="" />
-      <created>1674194866476</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1674194866476</updated>
-      <workItem from="1674194867658" duration="3388000" />
-      <workItem from="1674791517770" duration="3332000" />
-      <workItem from="1675116725940" duration="4884000" />
-      <workItem from="1675130505664" duration="168000" />
-      <workItem from="1675132161433" duration="88000" />
-      <workItem from="1675321422755" duration="149000" />
-      <workItem from="1675398191284" duration="25000" />
-      <workItem from="1675648310333" duration="769000" />
-      <workItem from="1675664559751" duration="5000" />
-      <workItem from="1675808857911" duration="491000" />
-      <workItem from="1675809374913" duration="572000" />
-      <workItem from="1675809958028" duration="181000" />
-      <workItem from="1675810160162" duration="177000" />
-      <workItem from="1675810348455" duration="17016000" />
-      <workItem from="1684101751887" duration="12460000" />
-    </task>
-    <task id="LOCAL-00001" summary="Changes Jekyll minimal mistakes">
-      <created>1674798123828</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1674798123828</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Add blog pages init">
-      <created>1675648446853</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1675648446853</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Update Page layout">
-      <created>1675839312397</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1675839312398</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Update blog post">
-      <created>1675839389518</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1675839389518</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Modify .gitignore">
-      <created>1675839556813</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1675839556813</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Update main category of programming page">
-      <created>1684065481992</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1684065481992</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
-    <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -153,15 +84,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changes Jekyll minimal mistakes" />
-    <MESSAGE value="Add blog pages init" />
-    <MESSAGE value="Update Page layout" />
-    <MESSAGE value="Update blog post" />
-    <MESSAGE value="Modify .gitignore" />
-    <MESSAGE value="Update main category of programming page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update main category of programming page" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/moheeto_github_io$test.coverage" NAME="test 커버리지 결과" MODIFIED="1683524703989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dddddd" />
+    <MESSAGE value="Init write side pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init write side pages" />
   </component>
 </project>
