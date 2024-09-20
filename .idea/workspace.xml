@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c7839de-411d-4835-8ca4-e739b420b9ee" name="Changes" comment="Update branch">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/topics/sw_architect/sw_architect.topic" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/sw_architect/sw_architect.topic" afterDir="false" />
-    </list>
+    <list default="true" id="9c7839de-411d-4835-8ca4-e739b420b9ee" name="Changes" comment="Update topic id" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +65,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/writeside/update-config",
+    "git-widget-placeholder": "feature/writeside/update-id",
     "last_opened_file_path": "/home/yoon/Github/youngjun0528.github.io"
   }
 }]]></component>
@@ -89,6 +85,7 @@
     <MESSAGE value="Init write side pages" />
     <MESSAGE value="Update main category of programming page" />
     <MESSAGE value="Update branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update branch" />
+    <MESSAGE value="Update topic id" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update topic id" />
   </component>
 </project>
