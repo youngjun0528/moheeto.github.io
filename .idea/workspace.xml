@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c7839de-411d-4835-8ca4-e739b420b9ee" name="Changes" comment="Init write side pages">
-      <change beforePath="$PROJECT_DIR$/example/How-to.md" beforeDir="false" afterPath="$PROJECT_DIR$/example/How-to.md" afterDir="false" />
+    <list default="true" id="9c7839de-411d-4835-8ca4-e739b420b9ee" name="Changes" comment="Update branch">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/topics/sw_architect/sw_architect.topic" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/sw_architect/sw_architect.topic" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +58,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2mKAZhd7NMT4lc5OejOhRIj5jzJ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -67,7 +69,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/writeside/init",
+    "git-widget-placeholder": "feature/writeside/update-config",
     "last_opened_file_path": "/home/yoon/Github/youngjun0528.github.io"
   }
 }]]></component>
@@ -85,6 +87,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init write side pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init write side pages" />
+    <MESSAGE value="Update main category of programming page" />
+    <MESSAGE value="Update branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update branch" />
   </component>
 </project>
