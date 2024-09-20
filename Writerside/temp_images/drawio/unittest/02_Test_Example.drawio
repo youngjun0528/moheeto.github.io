@@ -1,0 +1,67 @@
+<mxfile host="Electron" modified="2024-01-05T04:44:04.533Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.16 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="-ZfmBbiJE8CfYV3Btjqr" version="22.1.16" type="device">
+  <diagram name="페이지-1" id="ztabPf0JnHmOSImnw3Sr">
+    <mxGraphModel dx="1434" dy="784" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UIpnlorJmkkJKzhBi-2X-9" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="100" y="30" width="580" height="550" as="geometry" />
+        </mxCell>
+        <mxCell id="UIpnlorJmkkJKzhBi-2X-1" value="&lt;b&gt;리팩토링 내성&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="250" y="50" width="300" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="UIpnlorJmkkJKzhBi-2X-3" value="&lt;b&gt;회귀 방지&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="140" y="220" width="300" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="UIpnlorJmkkJKzhBi-2X-4" value="&lt;b&gt;빠른 피드백&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="360" y="220" width="300" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="UIpnlorJmkkJKzhBi-2X-5" value="End-To-End 테스트" style="text;html=1;strokeColor=#36393d;fillColor=#f9f7ed;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="230" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UIpnlorJmkkJKzhBi-2X-6" value="간단한 테스트" style="text;html=1;strokeColor=#36393d;fillColor=#ffcc99;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="230" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UIpnlorJmkkJKzhBi-2X-7" value="깨지기 쉬운 테스트" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="330" y="410" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UIpnlorJmkkJKzhBi-2X-8" value="실현 불가능한 이상적인 테스트" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#ffcccc;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="305" y="300" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UIpnlorJmkkJKzhBi-2X-14" value="&lt;b&gt;최대화&lt;/b&gt;" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=north;notch=0;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="375" y="100" width="50" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="UIpnlorJmkkJKzhBi-2X-16" value="&lt;b&gt;절충&lt;/b&gt;" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.twoWayArrow;dy=0.6;dx=35;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="240" y="460" width="330" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UIpnlorJmkkJKzhBi-2X-17" value="&lt;b&gt;유지보수성&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="110" y="65" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="UIpnlorJmkkJKzhBi-2X-18" value="" style="endArrow=oval;html=1;rounded=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=1;exitDx=0;exitDy=0;strokeColor=#808080;strokeWidth=7;startArrow=oval;startFill=1;endFill=1;" edge="1" parent="1" source="UIpnlorJmkkJKzhBi-2X-17" target="UIpnlorJmkkJKzhBi-2X-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-60" y="340" as="sourcePoint" />
+            <mxPoint x="-10" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UIpnlorJmkkJKzhBi-2X-19" value="" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;rotation=-180;strokeColor=#FF0000;strokeWidth=2;dashed=1;dashPattern=1 1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="240" y="505" width="107.5" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="UIpnlorJmkkJKzhBi-2X-20" value="" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;rotation=-180;strokeColor=#FF0000;strokeWidth=2;dashed=1;dashPattern=1 1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="357.5" y="505" width="95" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="UIpnlorJmkkJKzhBi-2X-21" value="" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;rotation=-180;strokeColor=#FF0000;strokeWidth=2;dashed=1;dashPattern=1 1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="460" y="505" width="95" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="UIpnlorJmkkJKzhBi-2X-22" value="End-To-end 테스트" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="228.75" y="540" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UIpnlorJmkkJKzhBi-2X-23" value="통합 테스트" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="340" y="540" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UIpnlorJmkkJKzhBi-2X-24" value="단위 테스트" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="440" y="540" width="130" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

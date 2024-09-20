@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Modern Web" id="modern_web">
+
+    <p>Full Stack Web Application Develop 관련 정리</p>
+    <p>
+        참고자료: <a href="https://product.kyobobook.co.kr/detail/S000001766410">[실전! 스프링 5와 Vue.js 2로 시작하는 모던 웹 애플리케이션 개발]</a>
+    </p>
+</topic>

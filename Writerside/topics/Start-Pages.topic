@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Start Pages" id="Start-Pages">
+    <title instance="hi">Start Pages</title>
+    <section-starting-page>
+        <title>Yoon's Programming Study</title>
+        <description>
+            학습 자료 정리
+        </description>
+
+        <!--    Add up to 2 topics that you want to promote. Use the "type" attribute to select an icon.    -->
+        <spotlight>
+            <a href="data_modeling.topic" type="documents"/>
+            <a href="Unittest.topic" type="documents"/>
+        </spotlight>
+
+        <!--    Add several topics that are most important for this section.    -->
+        <primary>
+            <title>Back-end</title>
+            <a href="cloud.topic" type="documents"/>
+            <a href="sw_architect.topic" type="documents"/>
+        </primary>
+
+        <!--    Add several topics that are less important or are relevant only for advanced/experienced users.    -->
+        <secondary>
+            <title>Front-End</title>
+            <a href="vue_js.topic" type="documents"/>
+            <a href="performance.topic" type="documents"/>
+        </secondary>
+
+    </section-starting-page>
+</topic>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rules SYSTEM "https://resources.jetbrains.com/writerside/1.0/redirection-rules.dtd">
+<rules>
+    <!-- format is as follows
+    <rule id="<unique id>">
+        <accepts>page.html</accepts>
+    </rule>
+    -->
+    <rule id="1459439f">
+        <description>Created after removal of "자격증" from Help Instance</description>
+        <accepts>자격증.html</accepts>
+    </rule>
+    <rule id="65cd4848">
+        <description>Created after removal of "ASDP" from Help Instance</description>
+        <accepts>asdp.html</accepts>
+    </rule>
+    <rule id="67996ecc">
+        <description>Created after removal of "Linux Master" from Help Instance</description>
+        <accepts>linux_master.html</accepts>
+    </rule>
+    <rule id="2a3da626">
+        <description>Created after removal of "자격증" from Help Instance</description>
+        <accepts>certificate.html</accepts>
+    </rule>
+    <rule id="7ee916f0">
+        <description>Created after removal of ""3.4.1 통계학" from Help Instance</description>
+        <accepts>2023-02-03-certificate-asdp-011.html</accepts>
+    </rule>
+    <rule id="27db606c">
+        <description>Created after removal of ""1과목. 리눅스 운영 및 관리" from Help Instance</description>
+        <accepts>2023-02-03-certificate-linux-master-011.html</accepts>
+    </rule>
+</rules>
